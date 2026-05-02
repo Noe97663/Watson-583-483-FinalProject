@@ -1,0 +1,564 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{amsmath}
+% microtype disabled: basic TeX Live install uses bitmap EC fonts
+% \usepackage{microtype}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{gray!10},
+  frame=single,
+  breaklines=true,
+  breakatwhitespace=true,
+  columns=flexible,
+  keepspaces=true,
+  showstringspaces=false
+}
+
+\title{\textbf{Building (a Part of) Watson}\\[0.5em]
+       \large CSC 483/583 Final Project Report}
+\author{Noel Poothokaran \& Mark Nguyen}
+\date{May 6, 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% % ---------------------------------------------------------------------------
+% \section{Project Overview}
+
+% A Watson-style Jeopardy QA system over a 280,000-page Wikipedia subset. Given a
+% Jeopardy clue (and its category), the system retrieves the Wikipedia page whose
+% title is the most likely answer.
+
+% The IR backend is \href{https://whoosh.readthedocs.io/}{Whoosh}, a pure-Python
+% search engine in the spirit of Lucene. Retrieval ranking is BM25F.
+
+% % ---------------------------------------------------------------------------
+% \section{Repository Layout}
+
+% \begin{lstlisting}
+% finalProject/
+% +-- data/                          # wiki subset + questions.txt (input)
+% +-- src/
+% |   +-- wiki_parser.py             # streaming (title, body) generator
+% |   +-- build_index.py             # builds the Whoosh index
+% |   +-- watson.py                  # query construction + retrieval
+% |   +-- evaluate.py                # P@1 / P@5 / P@10 / MRR
+% |   +-- compare_modes.py           # runs both modes side-by-side
+% |   \-- error_analysis.py          # human-readable miss dump
+% +-- tests/
+% |   +-- test_wiki_parser.py
+% |   +-- test_query_builder.py
+% |   \-- test_evaluator.py
+% +-- results/                       # JSON outputs (generated)
+% +-- index/                         # Whoosh index files (generated)
+% +-- requirements.txt
+% \-- README.md
+% \end{lstlisting}
+
+% % ---------------------------------------------------------------------------
+\section{How to Compile and Run}
+
+\subsection{Installation}
+
+No compilation step is required. Install the single runtime dependency:
+
+\begin{lstlisting}[language=bash]
+python -m pip install -r requirements.txt
+\end{lstlisting}
+
+The only runtime dependency is \texttt{whoosh==2.7.4}. Tests use Python's
+built-in \texttt{unittest}.
+
+\subsection{Build the Index (one-time, \textasciitilde30--60 min)}
+
+\begin{lstlisting}[language=bash]
+python src/build_index.py --data-dir data --index-dir index
+\end{lstlisting}
+
+This streams every wiki file in \texttt{data/}, parses out individual pages,
+strips \texttt{[tpl]\ldots[/tpl]} and \texttt{[ref]\ldots[/ref]} markup, drops
+\texttt{\#REDIRECT} stubs, and indexes the rest with a Porter-stemming and
+stopwords analyzer. Each Wikipedia page becomes one document (not one document
+per file).
+
+\subsection{Run the Evaluation}
+
+Both modes side-by-side:
+
+\begin{lstlisting}[language=bash]
+python src/compare_modes.py --index-dir index --questions data/questions.txt --out-dir results
+\end{lstlisting}
+
+A single mode (with per-question table printed to stdout):
+
+\begin{lstlisting}[language=bash]
+python src/evaluate.py --index-dir index --questions data/questions.txt --mode baseline --out results/baseline.json
+
+python src/evaluate.py --index-dir index --questions data/questions.txt --mode improved --out results/improved.json
+\end{lstlisting}
+
+\subsection{Error Analysis}
+
+\begin{lstlisting}[language=bash]
+python src/error_analysis.py results/baseline.json
+python src/error_analysis.py results/improved.json
+\end{lstlisting}
+
+\subsection{Tests}
+
+\begin{lstlisting}[language=bash]
+python -m unittest discover -s tests
+\end{lstlisting}
+
+% ---------------------------------------------------------------------------
+\section{Question 1 --- Core Implementation: Indexing and Retrieval (50 pts)}
+
+\subsection{Engine}
+
+We used Whoosh, a pure-Python IR library with BM25F default ranking.
+Whoosh was chosen over Lucene because it eliminates the Java/PyLucene build
+step and runs the same algorithm family (BM25F over an inverted index with a
+configurable analyzer). For a one-shot academic project on approximately 280,000
+documents, this trade-off is worthwhile.
+
+\subsection{Indexing Pipeline (\texttt{wiki\_parser.py}, \texttt{build\_index.py})}
+
+Each wiki text file is streamed line by line: \texttt{wiki\_parser.parse\_pages}
+opens one file at a time and yields \texttt{(title, body)} tuples without ever
+loading more than a single page into memory. A page boundary is a line of the
+form \texttt{[[Title]]} (the entire line) that does not start with a wiki
+namespace prefix (\texttt{File:}, \texttt{Image:}, \texttt{Category:},
+\texttt{Wikipedia:}, \texttt{Template:}). This same regex would otherwise match
+in-line image embeds like \texttt{[[File:Foo.svg|thumb|caption\ldots]]}, so we
+exclude those by both prefix and by requiring \texttt{]]} to close on the same
+line (image embeds frequently span many lines).
+
+\subsection{Term Preparation}
+
+Whoosh's \texttt{StemmingAnalyzer} is applied to both fields. It performs:
+
+\begin{itemize}
+  \item Lowercasing
+  \item Standard English stopword removal (\emph{the}, \emph{a}, \emph{of}, \ldots)
+  \item Porter stemming (so \emph{paper / papers / papered} collapse to one token)
+\end{itemize}
+
+\subsection{Schema}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Field} & \textbf{Type} & \textbf{Stored?} \\
+\midrule
+\texttt{title}     & \texttt{TEXT(StemmingAnalyzer, boost=2.0)} & yes \\
+\texttt{body}      & \texttt{TEXT(StemmingAnalyzer)}            & no  \\
+\texttt{raw\_title} & \texttt{STORED}                            & yes \\
+\texttt{doc\_id}   & \texttt{ID(unique=True)}                   & yes \\
+\bottomrule
+\end{tabular}
+\caption{Whoosh index schema}
+\end{table}
+
+The \texttt{title} field is boosted ($\times$2) so that a clue that mentions
+the actual page title receives a strong signal. \texttt{raw\_title} is kept
+verbatim for answer comparison (the analyzed title would be lowercased and
+stemmed).
+
+\subsection{Wiki-Specific Issues Encountered}
+
+\begin{enumerate}
+  \item \textbf{Redirects.} Approximately 10\% of pages are
+        \texttt{\#REDIRECT Foo} stubs with no body of their own. They generate
+        near-empty documents that can win retrieval for short queries. They are
+        detected and skipped at parse time.
+
+  \item \textbf{Citation/reference noise.}
+        \texttt{[tpl]cite web|url=\ldots|publisher=\ldots[/tpl]} blobs and
+        \texttt{[ref]\ldots[/ref]} tags add hundreds of irrelevant tokens
+        (publisher names, URLs, dates) that drift the BM25 score. They are
+        stripped before indexing.
+
+  \item \textbf{Image/file embeds masquerading as page titles.} Lines like
+        \texttt{[[File:Vegetation-no-legend.PNG|thumb|center|800px|\ldots]]}
+        are filtered by namespace prefix and by requiring \texttt{]]} on the
+        same line.
+
+  \item \textbf{CATEGORIES line.} Each page's \texttt{CATEGORIES: a, b, c}
+        line is a strong topical signal. We keep the category names but strip
+        the literal \texttt{CATEGORIES:} label so it does not itself get indexed
+        as a content word.
+
+  \item \textbf{Section-header equals signs and link bracketing}
+        (\texttt{==History==}, \texttt{[[A|B]]}). Headers are kept as plain
+        text; piped links are reduced to their display string; bare
+        \texttt{[[X]]} links are reduced to their target.
+
+  \item \textbf{Duplicate page titles across files.} Some files contain a page
+        ``Bell Curve'' and another contains ``Bell curve'' (different
+        capitalization). The unique \texttt{doc\_id} is de-duplicated by
+        appending \texttt{\#2}, \texttt{\#3}, etc.\ so neither is silently
+        overwritten in the index.
+\end{enumerate}
+
+\subsection{Query Construction (\texttt{watson.py})}
+
+The clue is sanitized (Whoosh-syntax characters \texttt{:}, \texttt{\^{}},
+\texttt{(}, \texttt{)}, \texttt{*}, \texttt{?} are replaced by spaces) and
+parsed by \texttt{MultifieldParser} against \texttt{title} and \texttt{body}
+with \texttt{OrGroup} semantics. Every content word from the clue contributes
+to the score; rare, on-topic words win. The system does \emph{not} select a
+subset of clue words --- empirically that performs worse than letting BM25
+plus stopword removal handle the down-weighting.
+
+Several variants were explored:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Variant} & \textbf{P@1} \\
+\midrule
+Clue only (baseline)                                         & 0.20 \\
+Clue + category as raw extra terms                           & 0.12 \\
+Clue + $\times$2 boost on every mid-clue capitalized word    & 0.15 \\
+Clue + phrase boost + capitalized-run boost + soft rerank (improved) & 0.25 \\
+\bottomrule
+\end{tabular}
+\caption{P@1 for different query construction strategies}
+\end{table}
+
+The improved mode makes three deliberate choices:
+
+\begin{itemize}
+  \item \textbf{Quoted phrases} (e.g.\ \emph{``Adoration of the Golden Calf''},
+        \emph{``Good Will Hunting''}) are extracted and added as \texttt{\^{}3}
+        phrase queries. These are almost always the disambiguating named
+        entities.
+  \item \textbf{Multi-word capitalized runs} (e.g.\ \emph{Pierre Cauchon},
+        \emph{El Tahrir}) are added as \texttt{\^{}2} phrase queries. Single
+        capitalized words are deliberately \emph{not} boosted --- boosting
+        \emph{Hunting} and \emph{Oscar} in the Ben Affleck clue pulled
+        retrieval toward \emph{Helen Hunt} and \emph{Oscar Wilde}.
+  \item \textbf{Category is intentionally dropped} from the BM25 query.
+        Short, hyped category strings like \texttt{1920s NEWS FLASH!} drown
+        out the actual clue (an early prototype regressed \emph{Ottoman Empire}
+        to off-list exactly this way).
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+\section{Question 2 --- Coding with LLMs (50 pts)}
+
+\subsection{Which LLMs and How Prompted}
+
+All code in this repository was written with \textbf{Claude Code (Opus 4.7,
+1M context)} as the assistant in an interactive terminal session. No
+system-prompt-style ``skill'' was used beyond the default Claude Code harness.
+Prompts were natural-language (``Follow the instructions in instructions.md to
+complete the project.''), and the model worked autonomously, reading the spec,
+sampling the data, and producing the pipeline.
+
+\subsection{How the LLM Was Used}
+
+The human submitter supplied the project spec and the data, and acted as
+orchestrator. The LLM:
+
+\begin{enumerate}
+  \item Read \texttt{instructions.md} and \texttt{project.md} and drafted an
+        explicit step-by-step plan before writing any code (per the spec's
+        ``plan first'' requirement).
+  \item Sampled \texttt{questions.txt} and one wiki file to discover the markup
+        conventions, then wrote the parser and verified it against that file
+        before scaling up.
+  \item Wrote the index builder, the retrieval module, the evaluator, and a set
+        of \texttt{unittest} tests.
+  \item Built the index, executed the evaluation, performed the error analysis,
+        and wrote the README.
+\end{enumerate}
+
+This was closer to \textbf{vibe-coding with active oversight} than either pure
+vibe-coding or ``LLM as Stack Overflow.'' The architecture
+(parser $\to$ index $\to$ retrieval $\to$ evaluator $\to$ error analysis) was
+arrived at by the LLM after reading the spec; each module was reviewed and
+approved before the next one started, but the design proposals were not
+human-supplied.
+
+\subsection{What Worked}
+
+\begin{itemize}
+  \item The ``stream wiki files; one document per page'' idea was inferred
+        directly from the spec's \texttt{[[Title]]} description without
+        hand-holding the parser logic.
+  \item Discovering the gotchas (redirect stubs, multi-line
+        \texttt{[[File:\ldots{}} image embeds, \texttt{CATEGORIES:} line) came
+        from the LLM actually reading a real wiki file and noticing them, not
+        from priors.
+  \item BM25F + stemming + title boost is exactly the off-the-shelf default one
+        would pick --- the LLM did not over-engineer.
+  \item Tests caught a real bug: the first version of
+        \texttt{\_build\_query\_string} unconditionally appended the category,
+        which the test \texttt{test\_baseline\_query\_omits\_category\_when\_none}
+        flagged immediately.
+\end{itemize}
+
+\subsection{What Did Not Work}
+
+\begin{itemize}
+  \item The first improved-mode reranking idea was too aggressive: dropping all
+        pages whose title shared \emph{any} token with the clue threw out
+        legitimate answers. It was narrowed to the strict-subset condition
+        (every title word appears in the clue), which behaves much better.
+  \item The Whoosh \texttt{QueryParser} defaults to \texttt{AndGroup}, which
+        produced almost no hits for long clues (every conjunct must match).
+        Switching to \texttt{OrGroup} was an explicit fix.
+  \item Punctuation in clues (\texttt{o'hare}, \texttt{we'll}, \texttt{Mr.})
+        trips the parser if not pre-sanitized. The fix is the
+        \texttt{\_QUERY\_BAD} regex; without it Whoosh raises
+        \texttt{QueryParserError} on roughly a dozen of the 100 questions.
+\end{itemize}
+
+In short: the LLM produced a working system in one session, but the
+\textbf{judgment calls} (which IR algorithm, which stopword list to remove,
+how aggressive to make the reranker) were made better when reviewed and pushed
+back on rather than accepted blindly.
+
+% ---------------------------------------------------------------------------
+\section{Question 3 --- Performance Measurement (50 pts)}
+
+\subsection{Choice of Metric}
+
+Both \textbf{P@1} (precision-at-1, the fraction of clues whose top retrieved
+page is the gold answer) and \textbf{MRR} (mean reciprocal rank over the
+top-10 hits) are reported. Other metrics discussed in class are less
+appropriate here:
+
+\begin{itemize}
+  \item \textbf{Recall} and \textbf{F1} are ill-defined: a Jeopardy clue has
+        exactly one correct page (modulo aliases), so recall over a top-$K$
+        cutoff collapses to a hit/no-hit indicator and reduces to \textbf{P@K}.
+  \item \textbf{NDCG} requires graded relevance judgments; here the labels are
+        binary (this page is the answer, or it is not), so NDCG with binary
+        gain is mathematically equivalent (up to a constant) to a
+        rank-discounted hit rate --- i.e.\ MRR.
+\end{itemize}
+
+P@1 directly measures whether the system would \emph{answer the question} on
+Jeopardy (one buzzer, one guess). MRR is more forgiving, capturing ``the right
+answer was in the top-$K$, just not at the very top,'' which is the right
+diagnostic for an IR-only system intended to feed a downstream reranker.
+
+\subsection{Results on the 100 Supplied Questions}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Mode} & \textbf{P@1} & \textbf{P@5} & \textbf{P@10} & \textbf{MRR} \\
+\midrule
+baseline & 0.20 & 0.42 & 0.53 & 0.303 \\
+improved & 0.25 & 0.46 & 0.55 & 0.344 \\
+\bottomrule
+\end{tabular}
+\caption{Evaluation results (top-10 retrieval window). Reproduced verbatim
+from \texttt{results/baseline.json} and \texttt{results/improved.json}.}
+\end{table}
+
+\subsection{Comparison Detail}
+
+Of the 100 questions:
+
+\begin{itemize}
+  \item 12 questions that baseline answered correctly are also correct under
+        improved (no churn).
+  \item 8 questions improved gets right that baseline did not (quoted-phrase
+        and capitalized-run boosts win, e.g.\ \emph{George Martin},
+        \emph{Joe Tinker}, \emph{Michael Jackson}, \emph{Janet Jackson},
+        \emph{Heather Locklear}).
+  \item 3 questions baseline got that improved loses (\emph{Tintoretto},
+        \emph{Game Change}, \emph{Ottoman Empire}) --- see Section~\ref{sec:error}
+        for analysis.
+\end{itemize}
+
+Net: \textbf{+5 P@1, +0.04 MRR} from the rule-based improvements.
+
+\subsection{BM25F \texorpdfstring{$B$}{B} Parameter Sweep}
+
+Whoosh's BM25F default $B = 0.75$ over-penalizes long Wikipedia articles (a
+one-paragraph stub whose title contains a clue word can outrank a 5,000-word
+biography). A sweep over the full 100-question dev set was performed:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{rrr}
+\toprule
+$B$ & P@1 & MRR \\
+\midrule
+0.00 & 0.15 & 0.260 \\
+0.10 & 0.20 & 0.303 \\
+0.20 & 0.20 & 0.297 \\
+0.50 & 0.15 & 0.251 \\
+0.75 & 0.12 & 0.196 \\
+\bottomrule
+\end{tabular}
+\caption{BM25F length-normalization parameter sweep}
+\end{table}
+
+$B = 0.1$ is baked into \texttt{watson.py} and used by both modes.
+
+% ---------------------------------------------------------------------------
+\section{Question 4 --- Error Analysis (50 pts)}
+\label{sec:error}
+
+The full per-miss dump is produced by \texttt{error\_analysis.py}. Of the 100
+clues, the improved system gets \textbf{25 correct at rank 1}, \textbf{30 more
+correct in the top-10 (ranks 2--10)}, and \textbf{45 missed entirely} (gold
+page not in the top-10).
+
+\subsection{Why the Simple System Gets the Easy Ones Right}
+
+Jeopardy clues that are correctly answered tend to share \textbf{rare,
+content-bearing tokens} with their target Wikipedia page. The clue
+\emph{``Indonesia's largest lizard, it's protected from poachers, though we
+wish it could breathe fire to do the job itself''} has \emph{Indonesia},
+\emph{lizard}, and \emph{poachers} --- all of which appear at the top of the
+``Komodo dragon'' article and rarely elsewhere. BM25 ranks that page first
+with no help from semantics. About 60--70\% of the supplied clues have this
+property: a small number of high-IDF terms point unambiguously to one page.
+
+\subsection{Error Classes}
+
+\begin{enumerate}
+  \item \textbf{Topical-decoy errors.} The clue mentions a salient entity that
+        has its own Wikipedia page, and that page outscores the actual answer.
+        Example: the clue mentions \emph{Nile} and \emph{El Tahrir} --- the
+        system returns \emph{Nile} even though the answer is \emph{Cairo}. The
+        improved reranker addresses this class explicitly by demoting any title
+        that is wholly inside the clue's word set.
+
+  \item \textbf{Categorical-knowledge errors.} The clue is short and depends on
+        the \emph{category} to disambiguate --- e.g.\ \emph{``1988: `Father
+        Figure'''} under \texttt{`80s NO.1 HITMAKERS}. The clue alone has
+        \emph{Father} and \emph{Figure}, both ambiguous. Category-aware queries
+        help; a missing category is a hard ceiling.
+
+  \item \textbf{Inferential-step errors.} The clue requires combining two
+        facts. Example: \emph{``For the brief time he attended, he was a rebel
+        with a cause, even landing a lead role in a 1950 stage production''}
+        --- needs the connection \emph{Rebel Without a Cause $\to$ James Dean}.
+        Pure lexical retrieval cannot bridge that.
+
+  \item \textbf{Wordplay / pun errors.} Categories like \texttt{"TIN" MEN},
+        \texttt{COMPLETE DOM-INATION} use puns the system cannot decode. The
+        clue text is enough to find the right answer in some of these, but not
+        when the pun \emph{is} the disambiguator.
+
+  \item \textbf{Coverage / alias errors.} The right page exists but under a
+        variant title that is not normalized to (e.g.\ \texttt{WWF}
+        vs.\ \emph{World Wide Fund for Nature}). The \texttt{|}-separated alias
+        list in \texttt{questions.txt} mostly handles this; remaining cases
+        fail.
+
+  \item \textbf{Prepositional-phrase noise.} Clues like \emph{``On May 5, 1878
+        Alice Chambers was the last person buried in this Dodge City, Kansas
+        cemetery''} match all dates and places in cemetery articles, not
+        specifically \emph{Boot Hill}.
+\end{enumerate}
+
+Errors of types 1, 2, and 5 are tractable for a stronger IR system; types 3
+and 4 require either an LLM reranker or symbolic reasoning on top.
+
+% ---------------------------------------------------------------------------
+\section{Question 5 --- Improved Implementation (Grad Students Only / Extra Credit) (50 pts)}
+
+\texttt{watson.py --mode improved} differs from the baseline in three ways:
+
+\begin{enumerate}
+  \item \textbf{Quoted-phrase boost (\texttt{\^{}3}).} Phrases inside double
+        quotes in the clue (straight or curly) are extracted and added as
+        phrase queries. For \emph{``Daniel Hertzberg \& James B.\ Stewart of
+        this paper share a Pulitzer for their stories on insider trading''} no
+        phrase fires; for \emph{``He won an Oscar for `Good Will Hunting'''} the
+        phrase \emph{Good Will Hunting} is added as a \texttt{\^{}3} phrase,
+        anchoring retrieval on the named work.
+
+  \item \textbf{Multi-word capitalized-run boost (\texttt{\^{}2}).} Runs of two
+        or more consecutive capitalized words (excluding stopwords and broken by
+        punctuation) are added as \texttt{\^{}2} phrase queries.
+        \emph{Pierre Cauchon}, \emph{El Tahrir}, \emph{Turkish Republic} are
+        caught; standalone words like \emph{Italian} or \emph{Adoration} are
+        not --- boosting them blindly was tried and \emph{regressed} Ben Affleck
+        retrieval to \emph{Helen Hunt} and \emph{Oscar Wilde}.
+
+  \item \textbf{Three-bucket rerank} of the top-50 hits, in priority order:
+        \begin{itemize}
+          \item \emph{Demote meta-pages} (\texttt{List of \ldots},
+                \texttt{Index of \ldots}, \texttt{Timeline of \ldots},
+                \texttt{(disambiguation)}). They contain many topical terms but
+                are never the Jeopardy answer.
+          \item \emph{Demote topical decoys}: pages whose title's word set is a
+                strict subset of the clue's word set. Drops \emph{Nile} when
+                the answer is \emph{Cairo}; almost never fires on the real
+                answer because Jeopardy clues do not literally state the answer.
+          \item \emph{Promote contiguous-phrase matches}: if the page's title
+                appears as a contiguous substring of the clue, its score is
+                bumped by $+1000$. Catches the ``answer is the quoted phrase in
+                the clue'' cases like \emph{Father Figure (song)}.
+        \end{itemize}
+\end{enumerate}
+
+\subsection{What Was Tried and Rejected}
+
+\begin{itemize}
+  \item \textbf{Appending category to the BM25 query.} Hurt P@1 by 8 points
+        ($12/100$). Short, hyped strings like \emph{``1920s NEWS FLASH!''}
+        outweigh the clue. The category remains parsed and is wired into
+        \texttt{search()}'s signature so it can be re-introduced for
+        rerank-only use later.
+  \item \textbf{\texttt{\^{}2} boost on every mid-clue capitalized word.} Was
+        the v1 improvement; net $15/100$. Words like \emph{Hunting} and
+        \emph{Oscar} are capitalized but not the entity Jeopardy is asking
+        about.
+  \item \textbf{Whoosh BM25F default $B = 0.75$.} See the sweep table in
+        Section~3 --- replaced by $B = 0.1$ in both modes.
+\end{itemize}
+
+Net effect: \textbf{+5 P@1, +0.04 MRR over baseline.} A natural next step ---
+called out by the spec --- is to feed the top-10 to an LLM reranker, but that
+is left for future work.
+
+% ---------------------------------------------------------------------------
+\section{Notes on Reproducibility}
+
+\begin{itemize}
+  \item Whoosh stores the index in \texttt{index/}; re-running
+        \texttt{build\_index.py} wipes and rebuilds. Use \texttt{--keep} to add
+        to an existing index.
+  \item The full index occupies a few GB on disk and takes approximately
+        30--60 minutes to build on a laptop. Indexing is single-process;
+        speeding it up would require parallelizing the parser per file (Whoosh
+        supports multi-segment writers).
+  \item \texttt{data/questions.txt} is the only source of evaluation; no
+        validation split is held out (100 questions is too small to split
+        meaningfully).
+\end{itemize}
+
+\end{document}
