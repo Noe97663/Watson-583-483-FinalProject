@@ -19,7 +19,9 @@ finalProject/
 │   ├── llm_rerank.py              # Claude Sonnet 4.6 reranker over the IR top-10 (Q5)
 │   ├── evaluate.py                # P@1 / P@5 / P@10 / MRR over questions.txt
 │   ├── compare_modes.py           # runs all selected modes side-by-side
-│   └── error_analysis.py          # human-readable miss dump
+│   ├── error_analysis.py          # bucketed miss analysis (5 heuristic buckets)
+│   ├── significance.py            # McNemar exact tests for pairwise mode comparison
+│   └── idf_analysis.py            # clue-IDF vs P@1 histogram (Q4)
 ├── tests/
 │   ├── test_wiki_parser.py
 │   ├── test_query_builder.py
@@ -317,7 +319,10 @@ retrieval, so the reranker has no candidate to pick from).
 **B parameter sweep.** Whoosh's BM25F default `B=0.75` over-penalizes
 long Wikipedia articles (a one-paragraph stub whose title contains a
 clue word can outrank a 5,000-word biography). I swept `B` over the
-full 100-question dev set:
+full 100-question set; note that this is the same set we report
+headline metrics on (the spec provides no held-out split, and 100
+questions is too small to carve one out without losing power), so
+`B=0.1` is mildly tuned to the eval set.
 
 | B    | P@1 | MRR   |
 |------|----:|------:|
@@ -328,6 +333,22 @@ full 100-question dev set:
 | 0.75 |  12 | 0.196 |
 
 `B=0.1` is baked into `watson.py` and used by both modes.
+
+**Statistical significance (McNemar's exact test).** Computed via
+`src/significance.py`:
+
+| comparison           | discordant pairs | exact p-value | verdict |
+|----------------------|-----------------:|--------------:|---------|
+| baseline vs improved | 11 (8 vs 3)      | 0.227         | not significant |
+| improved vs llm      | 30 (30 vs 0)     | 1.9e-9        | highly significant (p<0.001) |
+| baseline vs llm      | 37 (36 vs 1)     | 5.5e-10       | highly significant (p<0.001) |
+
+The +5 P@1 rule-based gain (baseline→improved) is **not significant**
+at α=0.05 — at n=100, an 8-vs-3 split could plausibly occur by
+chance. The +30 P@1 LLM-rerank gain is unambiguous. Honest reading:
+the rule-based improvements help but the dev set is too small to
+confirm; the LLM reranker is the only intervention whose gain is
+beyond doubt.
 
 ---
 
@@ -437,14 +458,40 @@ after rule-based and LLM improvements have done what they can.
 - The `decoy_overpowered` bucket is small (2 cases) — the
   improved-mode subset rerank already handled the obvious ones.
 
-### Why the easy 25 work
+### Why the easy 25 work — clue-IDF analysis
 
-Clues that the baseline gets right share **rare, content-bearing
-tokens** with their answer page (*Indonesia, lizard, poachers* →
-*Komodo dragon*; *Daniel Hertzberg, James B. Stewart, Pulitzer* →
-*Wall Street Journal*). About a quarter of the supplied clues have
-this property: a small number of high-IDF terms point unambiguously
-to one page, and BM25 ranks it first with no help from semantics.
+A natural hypothesis: the easy clues are the ones with rare
+distinguishing tokens (high IDF) that point unambiguously to one
+page. `src/idf_analysis.py` tests this by computing the **max
+content-token IDF** of each clue against the index's body postings,
+binning into quintiles, and reporting baseline P@1 per bin
+(`results/idf_histogram.png`):
+
+| max-IDF range | n  | P@1  | interpretation |
+|---------------|---:|-----:|----------------|
+| [1.9, 5.0]    | 20 | 0.10 | no rare anchor |
+| [5.1, 6.8]    | 20 | 0.20 | moderate |
+| **[7.1, 9.8]** | 20 | **0.45** | **sweet spot** |
+| [9.9, 11.2]   | 20 | 0.25 | very rare, mixed |
+| [11.2, 11.9]  | 19 | 0.00 | ultra-rare hapaxes |
+
+The pattern is **non-monotone — a sweet spot, not "rare = easy"**.
+Three observations:
+
+- Lowest quintile (P@1 = 0.10): the `under_anchored` bucket — quoted
+  song lyrics and 1-3 word product clues with no rare token.
+- Sweet spot (P@1 = 0.45): a single moderately-rare distinguishing
+  token (place name, organization, domain noun in dozens to hundreds
+  of pages) gives BM25 enough signal. *Indonesia, lizard, poachers*
+  → *Komodo dragon* is the textbook case.
+- Top quintile (P@1 = 0.00): ultra-rare tokens are usually obscure
+  proper nouns, foreign-language phrases, or near-hapaxes that
+  appear in a few unrelated pages and *not* in the actual answer's
+  page (*Tuomiokirkko* in the Helsinki cathedral clue; *Wolong* in
+  the Panda clue).
+
+**The refined claim**: BM25 wants *discriminating* tokens, not just
+*rare* ones — and these are not the same thing.
 
 ---
 
