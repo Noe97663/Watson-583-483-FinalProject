@@ -49,13 +49,20 @@ def make_schema() -> Schema:
 
 def build(data_dir: str, index_dir: str, *, clean: bool = True) -> int:
     """Index every page in ``data_dir`` into ``index_dir``. Returns doc count."""
+    print(f"[step 1] preparing index dir at {index_dir} (clean={clean}) ...",
+          flush=True)
     if clean and os.path.isdir(index_dir):
         shutil.rmtree(index_dir)
     os.makedirs(index_dir, exist_ok=True)
 
+    print(f"[step 2] creating Whoosh schema (StemmingAnalyzer, title boost ×2) ...",
+          flush=True)
     schema = make_schema()
     ix = index.create_in(index_dir, schema)
     writer = ix.writer(limitmb=512, procs=1, multisegment=True)
+
+    print(f"[step 3] streaming pages from {data_dir} and indexing ...",
+          flush=True)
 
     n = 0
     t0 = time.time()
@@ -79,9 +86,16 @@ def build(data_dir: str, index_dir: str, *, clean: bool = True) -> int:
         if n % 10_000 == 0:
             print(f"  indexed {n:,} pages ({time.time() - t0:.0f}s)", flush=True)
 
-    print(f"  committing {n:,} pages...", flush=True)
+    print(f"[step 4] committing {n:,} pages to disk ...", flush=True)
     writer.commit()
-    print(f"done. total: {n:,} pages in {time.time() - t0:.0f}s", flush=True)
+    elapsed = time.time() - t0
+    print()
+    print("=" * 60)
+    print("Summary")
+    print("=" * 60)
+    print(f"indexed pages   : {n:,}")
+    print(f"index directory : {index_dir}")
+    print(f"elapsed time    : {elapsed:.0f}s ({elapsed / 60:.1f} min)")
     return n
 
 

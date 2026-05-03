@@ -156,13 +156,15 @@ def search(
 ) -> List[Hit]:
     """Run retrieval and return the top-K hits as a list of ``Hit``s.
 
-    ``mode`` is one of ``"baseline"`` or ``"improved"``.
+    ``mode`` is one of ``"baseline"``, ``"improved"``, or ``"llm"``.
+    The ``"llm"`` mode runs the same retrieval as ``"improved"`` and
+    then asks Claude to reorder the top-K (see ``llm_rerank.py``).
     """
-    if mode not in ("baseline", "improved"):
+    if mode not in ("baseline", "improved", "llm"):
         raise ValueError(f"unknown mode: {mode}")
 
-    expand = mode == "improved"
-    rerank = mode == "improved"
+    expand = mode in ("improved", "llm")
+    rerank = mode in ("improved", "llm")
 
     qstr = _build_query_string(clue, category, expand=expand)
 
@@ -183,6 +185,15 @@ def search(
         hits = hits[:top_k]
         for i, h in enumerate(hits):
             h.rank = i + 1
+
+    if mode == "llm":
+        # Lazy import so the baseline + improved code paths work
+        # without anthropic installed.
+        if __package__ in (None, ""):
+            from llm_rerank import get_default_reranker  # type: ignore
+        else:
+            from .llm_rerank import get_default_reranker
+        hits = get_default_reranker().rerank(clue, category or "", hits)
 
     return hits
 

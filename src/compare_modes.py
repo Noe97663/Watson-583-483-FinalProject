@@ -48,19 +48,55 @@ def main() -> None:
     p.add_argument("--questions", default="data/questions.txt")
     p.add_argument("--top-k", type=int, default=10)
     p.add_argument("--out-dir", default="results")
+    p.add_argument(
+        "--modes",
+        nargs="+",
+        default=["baseline", "improved"],
+        choices=["baseline", "improved", "llm"],
+        help="Which modes to evaluate. Add 'llm' to also run the "
+             "Claude reranker (requires ANTHROPIC_API_KEY).",
+    )
+    p.add_argument("--quiet", action="store_true",
+                   help="suppress per-question progress lines")
     args = p.parse_args()
 
+    print(f"[step 1] preparing output dir {args.out_dir} ...", flush=True)
     os.makedirs(args.out_dir, exist_ok=True)
+
+    print(f"[step 2] reading questions from {args.questions} ...", flush=True)
     qs = read_questions(args.questions)
+    print(f"         loaded {len(qs)} questions.", flush=True)
+
+    print(f"[step 3] opening Whoosh index at {args.index_dir} ...", flush=True)
     ix = open_index(args.index_dir)
+    print(f"         index has {ix.doc_count()} documents.", flush=True)
+
+    print(f"[step 4] evaluating modes: {', '.join(args.modes)}", flush=True)
+    if "llm" in args.modes and not args.quiet:
+        # Lazy import: don't pull in anthropic if no LLM mode is requested.
+        if __package__ in (None, ""):
+            from llm_rerank import set_default_verbose  # type: ignore
+        else:
+            from .llm_rerank import set_default_verbose
+        set_default_verbose(True)
 
     rows = []
-    for mode in ("baseline", "improved"):
-        results = evaluate(ix, qs, top_k=args.top_k, mode=mode)
+    for mode_idx, mode in enumerate(args.modes, 1):
+        print(f"\n  -- mode {mode_idx}/{len(args.modes)}: {mode} --", flush=True)
+        results = evaluate(
+            ix, qs, top_k=args.top_k, mode=mode, progress=not args.quiet,
+        )
         s = summary(results)
         rows.append((mode, s, results))
-        _dump(os.path.join(args.out_dir, f"{mode}.json"), mode, results)
+        out_path = os.path.join(args.out_dir, f"{mode}.json")
+        _dump(out_path, mode, results)
+        print(f"  -- {mode}: P@1={s['p_at_1']:.3f}  MRR={s['mrr']:.3f}  "
+              f"(wrote {out_path})", flush=True)
 
+    print()
+    print("=" * 60)
+    print("Summary across all evaluated modes")
+    print("=" * 60)
     print(f"{'mode':<10}  {'P@1':>6}  {'P@5':>6}  {'P@10':>6}  {'MRR':>6}")
     for mode, s, _ in rows:
         print(
@@ -68,16 +104,21 @@ def main() -> None:
             f"{s['p_at_10']:>6.3f}  {s['mrr']:>6.3f}"
         )
 
-    # Per-question gain/regression list
-    base = {(r.question.category, r.question.clue): r.rank for r in rows[0][2]}
-    print("\nQuestions where mode changed correctness:")
-    for r in rows[1][2]:
-        k = (r.question.category, r.question.clue)
-        b_rank = base[k]
-        if (b_rank == 1) != (r.rank == 1):
-            change = "+" if r.rank == 1 else "-"
-            gold = r.question.gold[:40]
-            print(f"  {change} (base={b_rank or '-'}, imp={r.rank or '-'})  {gold}")
+    # Per-question gain/regression list — compare each non-first mode
+    # against the first mode (treated as the baseline for diffing).
+    if len(rows) >= 2:
+        base_mode, _, base_results = rows[0]
+        base = {(r.question.category, r.question.clue): r.rank for r in base_results}
+        for mode, _, results in rows[1:]:
+            print(f"\nQuestions where {mode} differs from {base_mode}:")
+            for r in results:
+                k = (r.question.category, r.question.clue)
+                b_rank = base[k]
+                if (b_rank == 1) != (r.rank == 1):
+                    change = "+" if r.rank == 1 else "-"
+                    gold = r.question.gold[:40]
+                    print(f"  {change} ({base_mode}={b_rank or '-'}, "
+                          f"{mode}={r.rank or '-'})  {gold}")
 
 
 if __name__ == "__main__":

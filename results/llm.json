@@ -1,0 +1,6027 @@
+{
+  "mode": "llm",
+  "summary": {
+    "n": 100,
+    "p_at_1": 0.55,
+    "p_at_5": 0.55,
+    "p_at_10": 0.55,
+    "mrr": 0.55
+  },
+  "results": [
+    {
+      "category": "NEWSPAPERS",
+      "clue": "The dominant paper in our nation's capital, it's among the top 10 U.S. papers in circulation",
+      "aliases": [
+        "The Washington Post"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 48.60597900456889,
+          "title": "Madison, Wisconsin"
+        },
+        {
+          "rank": 2,
+          "score": 47.78256501225016,
+          "title": "Culture of Italy"
+        },
+        {
+          "rank": 3,
+          "score": 46.4216003480858,
+          "title": "William Randolph Hearst"
+        },
+        {
+          "rank": 4,
+          "score": 46.1614715878263,
+          "title": "Social capital"
+        },
+        {
+          "rank": 5,
+          "score": 45.39630503424269,
+          "title": "Capitalism"
+        },
+        {
+          "rank": 6,
+          "score": 44.92691208866376,
+          "title": "Georgia (U.S. state)"
+        },
+        {
+          "rank": 7,
+          "score": 44.451522515382706,
+          "title": "Warren G. Harding"
+        },
+        {
+          "rank": 8,
+          "score": 44.29980692278971,
+          "title": "Virginia"
+        },
+        {
+          "rank": 9,
+          "score": 44.256867242883615,
+          "title": "Confederate States of America"
+        },
+        {
+          "rank": 10,
+          "score": 43.111150110377395,
+          "title": "2000s (decade)"
+        }
+      ]
+    },
+    {
+      "category": "OLD YEAR'S RESOLUTIONS",
+      "clue": "The practice of pre-authorizing presidential use of force dates to a 1955 resolution re: this island near mainland China",
+      "aliases": [
+        "Taiwan"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 70.32034168532816,
+          "title": "Taiwan"
+        },
+        {
+          "rank": 2,
+          "score": 79.55267451950621,
+          "title": "History of the Republic of China"
+        },
+        {
+          "rank": 3,
+          "score": 77.48705418285788,
+          "title": "Republic of China presidential election, 2004"
+        },
+        {
+          "rank": 4,
+          "score": 71.00517417313199,
+          "title": "One-China policy"
+        },
+        {
+          "rank": 5,
+          "score": 69.58216915509477,
+          "title": "China–United States relations"
+        },
+        {
+          "rank": 6,
+          "score": 64.79723367703411,
+          "title": "Madagascar"
+        },
+        {
+          "rank": 7,
+          "score": 63.462474503821525,
+          "title": "Lockheed U-2"
+        },
+        {
+          "rank": 8,
+          "score": 61.05712792911035,
+          "title": "Political status of Taiwan"
+        },
+        {
+          "rank": 9,
+          "score": 60.820150609356205,
+          "title": "Communist Party of China"
+        },
+        {
+          "rank": 10,
+          "score": 60.433150741340555,
+          "title": "Korean War"
+        }
+      ]
+    },
+    {
+      "category": "NEWSPAPERS",
+      "clue": "Daniel Hertzberg & James B. Stewart of this paper shared a 1988 Pulitzer for their stories about insider trading",
+      "aliases": [
+        "The Wall Street Journal"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 80.56430811675688,
+          "title": "The Wall Street Journal"
+        },
+        {
+          "rank": 2,
+          "score": 52.640280070034166,
+          "title": "William Jardine (merchant)"
+        },
+        {
+          "rank": 3,
+          "score": 50.91726441249211,
+          "title": "Oscar Wilde"
+        },
+        {
+          "rank": 4,
+          "score": 50.18908349271037,
+          "title": "Newseum"
+        },
+        {
+          "rank": 5,
+          "score": 47.302951506427604,
+          "title": "The Philadelphia Story (film)"
+        },
+        {
+          "rank": 6,
+          "score": 46.64535130288111,
+          "title": "Harold Stewart"
+        },
+        {
+          "rank": 7,
+          "score": 46.37499081971474,
+          "title": "James Watson"
+        },
+        {
+          "rank": 8,
+          "score": 46.16485640266892,
+          "title": "Barry Minkow"
+        },
+        {
+          "rank": 9,
+          "score": 45.84535817699012,
+          "title": "George Herriman"
+        },
+        {
+          "rank": 10,
+          "score": 45.548148159901906,
+          "title": "James VI and I"
+        }
+      ]
+    },
+    {
+      "category": "BROADWAY LYRICS",
+      "clue": "Song that says, \"you make me smile with my heart; your looks are laughable, unphotographable\"",
+      "aliases": [
+        "My Funny Valentine"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 54.27212335841428,
+          "title": "Born This Way (song)"
+        },
+        {
+          "rank": 2,
+          "score": 53.465776258020135,
+          "title": "A Brisk Young Sailor Courted Me"
+        },
+        {
+          "rank": 3,
+          "score": 51.11307635585811,
+          "title": "Songs from My Heart"
+        },
+        {
+          "rank": 4,
+          "score": 48.73339713557671,
+          "title": "Say No More (Clay Walker album)"
+        },
+        {
+          "rank": 5,
+          "score": 48.69221361536876,
+          "title": "Baul"
+        },
+        {
+          "rank": 6,
+          "score": 48.68206200772712,
+          "title": "Take Me to Your Heart (Bananarama song)"
+        },
+        {
+          "rank": 7,
+          "score": 48.18501799444225,
+          "title": "Sgt. Pepper's Lonely Hearts Club Band"
+        },
+        {
+          "rank": 8,
+          "score": 48.124358340346085,
+          "title": "Keyshia Cole"
+        },
+        {
+          "rank": 9,
+          "score": 48.11349778045283,
+          "title": "Hold It Against Me"
+        },
+        {
+          "rank": 10,
+          "score": 47.452845516599545,
+          "title": "John Mellencamp"
+        }
+      ]
+    },
+    {
+      "category": "POTPOURRI",
+      "clue": "In 2011 bell ringers for this charity started accepting digital donations to its red kettle",
+      "aliases": [
+        "The Salvation Army",
+        "Salvation Army"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 75.45072973985914,
+          "title": "The Salvation Army"
+        },
+        {
+          "rank": 2,
+          "score": 44.063658017135985,
+          "title": "Bona Vista (charity)"
+        },
+        {
+          "rank": 3,
+          "score": 43.41224316910468,
+          "title": "Tinker Bell"
+        },
+        {
+          "rank": 4,
+          "score": 42.96425011714779,
+          "title": "Donation"
+        },
+        {
+          "rank": 5,
+          "score": 42.59160437971741,
+          "title": "Bell OH-58 Kiowa"
+        },
+        {
+          "rank": 6,
+          "score": 42.56311545509304,
+          "title": "Liberty Bell"
+        },
+        {
+          "rank": 7,
+          "score": 41.666763848155206,
+          "title": "Taco Bell"
+        },
+        {
+          "rank": 8,
+          "score": 40.77199282652884,
+          "title": "Public library"
+        },
+        {
+          "rank": 9,
+          "score": 40.24368490136731,
+          "title": "Education reform"
+        },
+        {
+          "rank": 10,
+          "score": 39.97568547445455,
+          "title": "Digital rights management"
+        }
+      ]
+    },
+    {
+      "category": "STATE OF THE ART MUSEUM (Alex: We'll give you the museum. You give us the state.)",
+      "clue": "The Naples Museum of Art",
+      "aliases": [
+        "Florida"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 55.14839820500883,
+          "title": "Jen Stark"
+        },
+        {
+          "rank": 2,
+          "score": 36.408972333389436,
+          "title": "Metropolitan Museum of Art"
+        },
+        {
+          "rank": 3,
+          "score": 36.3222484237672,
+          "title": "Museum of Modern Art"
+        },
+        {
+          "rank": 4,
+          "score": 35.9203359811836,
+          "title": "Museum of Contemporary Art, Chicago"
+        },
+        {
+          "rank": 5,
+          "score": 35.915606867588764,
+          "title": "Whitney Museum of American Art"
+        },
+        {
+          "rank": 6,
+          "score": 35.76181100491589,
+          "title": "Maryhill Museum of Art"
+        },
+        {
+          "rank": 7,
+          "score": 35.74266526351909,
+          "title": "Utah Museum of Fine Arts"
+        },
+        {
+          "rank": 8,
+          "score": 35.689609695948135,
+          "title": "San Francisco Museum of Modern Art"
+        },
+        {
+          "rank": 9,
+          "score": 35.58074074496482,
+          "title": "Lentos Art Museum"
+        },
+        {
+          "rank": 10,
+          "score": 35.3409695944012,
+          "title": "Columbus Museum of Art"
+        }
+      ]
+    },
+    {
+      "category": "\"TIN\" MEN",
+      "clue": "This Italian painter depicted the \"Adoration of the Golden Calf\"",
+      "aliases": [
+        "Tintoretto"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 72.03570267223607,
+          "title": "Tintoretto"
+        },
+        {
+          "rank": 2,
+          "score": 1028.5131764484552,
+          "title": "Adoration of the Shepherds (Rubens)"
+        },
+        {
+          "rank": 3,
+          "score": 104.31048172964672,
+          "title": "Nicolas Poussin"
+        },
+        {
+          "rank": 4,
+          "score": 53.60557953431557,
+          "title": "Pidyon haben"
+        },
+        {
+          "rank": 5,
+          "score": 52.5155901651536,
+          "title": "Paul Verhoeven"
+        },
+        {
+          "rank": 6,
+          "score": 50.25987457791731,
+          "title": "Picaresque novel"
+        },
+        {
+          "rank": 7,
+          "score": 49.03987032799043,
+          "title": "Bethel"
+        },
+        {
+          "rank": 8,
+          "score": 47.43674677846342,
+          "title": "Rutger Hauer"
+        },
+        {
+          "rank": 9,
+          "score": 45.19987679877148,
+          "title": "Yom Kippur"
+        },
+        {
+          "rank": 10,
+          "score": 40.12850484075993,
+          "title": "Tachanun"
+        }
+      ]
+    },
+    {
+      "category": "UCLA CELEBRITY ALUMNI",
+      "clue": "This woman who won consecutive heptathlons at the Olympics went to UCLA on a basketball scholarship",
+      "aliases": [
+        "Jackie Joyner-Kersee"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 65.23270484583328,
+          "title": "Jackie Joyner-Kersee"
+        },
+        {
+          "rank": 2,
+          "score": 61.38094313497768,
+          "title": "NC State Wolfpack men's basketball"
+        },
+        {
+          "rank": 3,
+          "score": 52.89344974424062,
+          "title": "Maria Mutola"
+        },
+        {
+          "rank": 4,
+          "score": 52.39258107878409,
+          "title": "University of Virginia"
+        },
+        {
+          "rank": 5,
+          "score": 52.054606988121435,
+          "title": "Kevin Love"
+        },
+        {
+          "rank": 6,
+          "score": 51.143203939580246,
+          "title": "University of California, Los Angeles"
+        },
+        {
+          "rank": 7,
+          "score": 50.93833223073022,
+          "title": "Bob Knight"
+        },
+        {
+          "rank": 8,
+          "score": 49.35726641698959,
+          "title": "Kareem Abdul-Jabbar"
+        },
+        {
+          "rank": 9,
+          "score": 49.325482917638524,
+          "title": "Women's National Basketball Association"
+        },
+        {
+          "rank": 10,
+          "score": 48.66356212321225,
+          "title": "Dean Smith"
+        }
+      ]
+    },
+    {
+      "category": "SERVICE ORGANIZATIONS",
+      "clue": "Originally this club's emblem was a wagon wheel; now it's a gearwheel with 24 cogs & 6 spokes",
+      "aliases": [
+        "Rotary International"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 55.67501912415624,
+          "title": "Spoke"
+        },
+        {
+          "rank": 2,
+          "score": 48.531011277246016,
+          "title": "Chevrolet Impala"
+        },
+        {
+          "rank": 3,
+          "score": 46.71851421035368,
+          "title": "Pontiac"
+        },
+        {
+          "rank": 4,
+          "score": 45.06996142068074,
+          "title": "AMC Matador"
+        },
+        {
+          "rank": 5,
+          "score": 44.789581813948885,
+          "title": "Honda Accord"
+        },
+        {
+          "rank": 6,
+          "score": 44.381683403048505,
+          "title": "Chrysler New Yorker"
+        },
+        {
+          "rank": 7,
+          "score": 43.27856613214543,
+          "title": "Chevrolet Celebrity"
+        },
+        {
+          "rank": 8,
+          "score": 42.24123069107623,
+          "title": "Emblem of Angola"
+        },
+        {
+          "rank": 9,
+          "score": 40.13445188859008,
+          "title": "24 cm Kanone M. 16"
+        },
+        {
+          "rank": 10,
+          "score": 39.69785958512769,
+          "title": "Ferris wheel"
+        }
+      ]
+    },
+    {
+      "category": "AFRICAN CITIES",
+      "clue": "Several bridges, including El Tahrir, cross the Nile in this capital",
+      "aliases": [
+        "Cairo"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 59.60571146617692,
+          "title": "Cairo"
+        },
+        {
+          "rank": 2,
+          "score": 44.56400798701053,
+          "title": "Khartoum"
+        },
+        {
+          "rank": 3,
+          "score": 41.93738923611503,
+          "title": "Economy of El Salvador"
+        },
+        {
+          "rank": 4,
+          "score": 41.695511109993426,
+          "title": "Blue Nile"
+        },
+        {
+          "rank": 5,
+          "score": 39.98676090863979,
+          "title": "Crossing the Red Sea"
+        },
+        {
+          "rank": 6,
+          "score": 39.31180733913487,
+          "title": "El Salvador"
+        },
+        {
+          "rank": 7,
+          "score": 38.943000762252765,
+          "title": "West Nile virus"
+        },
+        {
+          "rank": 8,
+          "score": 38.134469053868926,
+          "title": "Yom Kippur War"
+        },
+        {
+          "rank": 9,
+          "score": 37.25707971368684,
+          "title": "Pan-American Highway (North America)"
+        },
+        {
+          "rank": 10,
+          "score": 37.16118136533104,
+          "title": "Nile perch"
+        }
+      ]
+    },
+    {
+      "category": "HISTORICAL QUOTES",
+      "clue": "After the fall of France in 1940, this general told his country, \"France has lost a battle. But France has not lost the war\"",
+      "aliases": [
+        "Charles de Gaulle",
+        "de Gaulle"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 72.73205319065254,
+          "title": "History of France"
+        },
+        {
+          "rank": 2,
+          "score": 70.28859642118685,
+          "title": "Battle of the Bulge"
+        },
+        {
+          "rank": 3,
+          "score": 69.61392491331308,
+          "title": "World War II"
+        },
+        {
+          "rank": 4,
+          "score": 69.35022803681893,
+          "title": "Battle of Britain"
+        },
+        {
+          "rank": 5,
+          "score": 68.74480501094936,
+          "title": "Vietnam War"
+        },
+        {
+          "rank": 6,
+          "score": 68.5094050473837,
+          "title": "Polish contribution to World War II"
+        },
+        {
+          "rank": 7,
+          "score": 68.32513546717601,
+          "title": "Eastern Front (World War II)"
+        },
+        {
+          "rank": 8,
+          "score": 67.75843032990346,
+          "title": "Winter War"
+        },
+        {
+          "rank": 9,
+          "score": 66.49804039206114,
+          "title": "Anglo-French Supreme War Council"
+        },
+        {
+          "rank": 10,
+          "score": 64.99073654767135,
+          "title": "Battle of Passchendaele"
+        }
+      ]
+    },
+    {
+      "category": "STATE OF THE ART MUSEUM (Alex: We'll give you the museum. You give us the state.)",
+      "clue": "The Taft Museum of Art",
+      "aliases": [
+        "Ohio"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 62.492996184560866,
+          "title": "Frederick W. Garber"
+        },
+        {
+          "rank": 2,
+          "score": 39.32838504443431,
+          "title": "Lytle Tunnel"
+        },
+        {
+          "rank": 3,
+          "score": 36.408972333389436,
+          "title": "Metropolitan Museum of Art"
+        },
+        {
+          "rank": 4,
+          "score": 36.3222484237672,
+          "title": "Museum of Modern Art"
+        },
+        {
+          "rank": 5,
+          "score": 35.9203359811836,
+          "title": "Museum of Contemporary Art, Chicago"
+        },
+        {
+          "rank": 6,
+          "score": 35.915606867588764,
+          "title": "Whitney Museum of American Art"
+        },
+        {
+          "rank": 7,
+          "score": 35.76181100491589,
+          "title": "Maryhill Museum of Art"
+        },
+        {
+          "rank": 8,
+          "score": 35.74266526351909,
+          "title": "Utah Museum of Fine Arts"
+        },
+        {
+          "rank": 9,
+          "score": 35.689609695948135,
+          "title": "San Francisco Museum of Modern Art"
+        },
+        {
+          "rank": 10,
+          "score": 35.58074074496482,
+          "title": "Lentos Art Museum"
+        }
+      ]
+    },
+    {
+      "category": "CEMETERIES",
+      "clue": "The mast from the USS Maine is part of the memorial to the ship & crew at this national cemetery",
+      "aliases": [
+        "Arlington National Cemetery",
+        "Arlington Cemetery"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 80.8831639009593,
+          "title": "USS Arizona Memorial"
+        },
+        {
+          "rank": 2,
+          "score": 59.2455312019015,
+          "title": "Thomas W. Lawson (ship)"
+        },
+        {
+          "rank": 3,
+          "score": 54.65510144975539,
+          "title": "USS Constitution"
+        },
+        {
+          "rank": 4,
+          "score": 52.15844200373127,
+          "title": "USS Missouri (BB-63)"
+        },
+        {
+          "rank": 5,
+          "score": 50.43066267114881,
+          "title": "USS John F. Kennedy (CV-67)"
+        },
+        {
+          "rank": 6,
+          "score": 48.64593067757411,
+          "title": "USS Minneapolis–Saint Paul (SSN-708)"
+        },
+        {
+          "rank": 7,
+          "score": 48.45509153273899,
+          "title": "USS Harry S. Truman (CVN-75)"
+        },
+        {
+          "rank": 8,
+          "score": 47.796862645734336,
+          "title": "Flying Squadron (United States Navy)"
+        },
+        {
+          "rank": 9,
+          "score": 47.72035052053254,
+          "title": "USS Bonhomme Richard (LHD-6)"
+        },
+        {
+          "rank": 10,
+          "score": 47.36641503307803,
+          "title": "USS Cod (SS-224)"
+        }
+      ]
+    },
+    {
+      "category": "GOLDEN GLOBE WINNERS",
+      "clue": "In 2009: Joker on film",
+      "aliases": [
+        "Heath Ledger"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 35.92970662982755,
+          "title": "Joker (playing card)"
+        },
+        {
+          "rank": 2,
+          "score": 32.465339180006204,
+          "title": "Christmas With the Joker"
+        },
+        {
+          "rank": 3,
+          "score": 30.95215486002072,
+          "title": "Hidden (2009 film)"
+        },
+        {
+          "rank": 4,
+          "score": 30.652123458227063,
+          "title": "Children of the Corn (2009 film)"
+        },
+        {
+          "rank": 5,
+          "score": 30.028089450408153,
+          "title": "Ninaithale Inikkum (2009 film)"
+        },
+        {
+          "rank": 6,
+          "score": 29.974620170509784,
+          "title": "Victory (2009 film)"
+        },
+        {
+          "rank": 7,
+          "score": 28.87607606102221,
+          "title": "Best of Times (2009 film)"
+        },
+        {
+          "rank": 8,
+          "score": 28.842650972989194,
+          "title": "Love Guru (2009 film)"
+        },
+        {
+          "rank": 9,
+          "score": 28.720971118054994,
+          "title": "Love Hurts (2009 film)"
+        },
+        {
+          "rank": 10,
+          "score": 28.257246950542182,
+          "title": "Giant (2009 film)"
+        }
+      ]
+    },
+    {
+      "category": "HISTORICAL HODGEPODGE",
+      "clue": "It was the peninsula fought over in the peninsular war of 1808 to 1814",
+      "aliases": [
+        "Iberia",
+        "Iberian Peninsula"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 58.868083426428825,
+          "title": "History of Spain"
+        },
+        {
+          "rank": 2,
+          "score": 70.84484747016276,
+          "title": "Napoleonic Wars"
+        },
+        {
+          "rank": 3,
+          "score": 54.829885686059306,
+          "title": "War of the Sixth Coalition"
+        },
+        {
+          "rank": 4,
+          "score": 49.41653996974296,
+          "title": "Finnish War"
+        },
+        {
+          "rank": 5,
+          "score": 49.1243523141667,
+          "title": "History of Spain (1814–73)"
+        },
+        {
+          "rank": 6,
+          "score": 47.712466657535636,
+          "title": "Ferdinand VII of Spain"
+        },
+        {
+          "rank": 7,
+          "score": 44.87464527597533,
+          "title": "Peninsula Campaign"
+        },
+        {
+          "rank": 8,
+          "score": 43.553834333820845,
+          "title": "Honoré Théodore Maxime Gazan de la Peyrière"
+        },
+        {
+          "rank": 9,
+          "score": 43.55142289916491,
+          "title": "FitzRoy Somerset, 1st Baron Raglan"
+        },
+        {
+          "rank": 10,
+          "score": 42.858617919210104,
+          "title": "History of Catalonia"
+        }
+      ]
+    },
+    {
+      "category": "CONSERVATION",
+      "clue": "In 1980 China founded a center for these cute creatures in its bamboo-rich Wolong Nature Preserve",
+      "aliases": [
+        "Panda",
+        "Giant panda"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 65.67645688252024,
+          "title": "Chengdu"
+        },
+        {
+          "rank": 2,
+          "score": 56.731772848738764,
+          "title": "Geography of China"
+        },
+        {
+          "rank": 3,
+          "score": 55.524672441582425,
+          "title": "Religion in China"
+        },
+        {
+          "rank": 4,
+          "score": 54.71054340785872,
+          "title": "Academy of Natural Sciences of Drexel University"
+        },
+        {
+          "rank": 5,
+          "score": 52.225946059191024,
+          "title": "Craters of the Moon National Monument and Preserve"
+        },
+        {
+          "rank": 6,
+          "score": 51.10444727535011,
+          "title": "Florida Museum of Natural History"
+        },
+        {
+          "rank": 7,
+          "score": 50.53970302267085,
+          "title": "Preservation Resource Center"
+        },
+        {
+          "rank": 8,
+          "score": 49.71224667575583,
+          "title": "Chinese art"
+        },
+        {
+          "rank": 9,
+          "score": 49.0067514807363,
+          "title": "Chinese music"
+        },
+        {
+          "rank": 10,
+          "score": 48.68550460343166,
+          "title": "Foreign relations of China"
+        }
+      ]
+    },
+    {
+      "category": "'80s NO.1 HITMAKERS",
+      "clue": "1988: \"Father Figure\"",
+      "aliases": [
+        "George Michael"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 88.42061851190789,
+          "title": "Father's Day"
+        },
+        {
+          "rank": 2,
+          "score": 77.66106645379247,
+          "title": "Indiana Jones"
+        },
+        {
+          "rank": 3,
+          "score": 71.45325992342096,
+          "title": "Camille Pissarro"
+        },
+        {
+          "rank": 4,
+          "score": 71.08612456930823,
+          "title": "Freddy Maertens"
+        },
+        {
+          "rank": 5,
+          "score": 70.18214762543184,
+          "title": "Brookside"
+        },
+        {
+          "rank": 6,
+          "score": 68.9955097082668,
+          "title": "W. H. R. Rivers"
+        },
+        {
+          "rank": 7,
+          "score": 67.43632593264208,
+          "title": "Mayor (Buffy the Vampire Slayer)"
+        },
+        {
+          "rank": 8,
+          "score": 65.30804872455059,
+          "title": "Prince of Persia (2008 video game)"
+        },
+        {
+          "rank": 9,
+          "score": 65.20300796407537,
+          "title": "Captain Hook"
+        },
+        {
+          "rank": 10,
+          "score": 65.03212957418268,
+          "title": "Ruhollah Khomeini"
+        }
+      ]
+    },
+    {
+      "category": "AFRICAN-AMERICAN WOMEN",
+      "clue": "In an essay defending this 2011 film, Myrlie Evers-Williams said, \"My mother was\" this film \"& so was her mother\"",
+      "aliases": [
+        "The Help"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 123.04548778300774,
+          "title": "Medgar Evers"
+        },
+        {
+          "rank": 2,
+          "score": 104.45402070428193,
+          "title": "Chloë Sevigny"
+        },
+        {
+          "rank": 3,
+          "score": 90.87066217351017,
+          "title": "March on Washington for Jobs and Freedom"
+        },
+        {
+          "rank": 4,
+          "score": 90.8685073305683,
+          "title": "Prince Philip, Duke of Edinburgh"
+        },
+        {
+          "rank": 5,
+          "score": 90.0864431769034,
+          "title": "Anna Akhmatova"
+        },
+        {
+          "rank": 6,
+          "score": 88.3354075144025,
+          "title": "Charity (play)"
+        },
+        {
+          "rank": 7,
+          "score": 88.08409009041625,
+          "title": "Hans Zimmer"
+        },
+        {
+          "rank": 8,
+          "score": 84.79437164823356,
+          "title": "Charles Dickens"
+        },
+        {
+          "rank": 9,
+          "score": 82.66489418543762,
+          "title": "Penny Marshall"
+        },
+        {
+          "rank": 10,
+          "score": 81.72236304344143,
+          "title": "Laura Bush"
+        }
+      ]
+    },
+    {
+      "category": "SERVICE ORGANIZATIONS",
+      "clue": "Father Michael McGivney founded this fraternal society for Catholic laymen in 1882",
+      "aliases": [
+        "Knights of Columbus"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 144.83858157797155,
+          "title": "Knights of Columbus"
+        },
+        {
+          "rank": 2,
+          "score": 44.53802114751636,
+          "title": "Traditionalist Catholic"
+        },
+        {
+          "rank": 3,
+          "score": 40.69957083173808,
+          "title": "Laymen's Home Missionary Movement"
+        },
+        {
+          "rank": 4,
+          "score": 38.64592747346578,
+          "title": "Josephite Fathers"
+        },
+        {
+          "rank": 5,
+          "score": 37.26012530035523,
+          "title": "Studentenverbindung"
+        },
+        {
+          "rank": 6,
+          "score": 37.105398269521785,
+          "title": "Dorothy Day"
+        },
+        {
+          "rank": 7,
+          "score": 36.949693563574634,
+          "title": "St. Michael's Preparatory School (Silverado, California)"
+        },
+        {
+          "rank": 8,
+          "score": 36.08786179943613,
+          "title": "Catholic sex abuse cases"
+        },
+        {
+          "rank": 9,
+          "score": 35.2930549248564,
+          "title": "Sacred Heart Catholic Church (McCartyville, Ohio)"
+        },
+        {
+          "rank": 10,
+          "score": 34.87848315409617,
+          "title": "Michael P. Malone"
+        }
+      ]
+    },
+    {
+      "category": "CONSERVATION",
+      "clue": "Early projects of the WWF, this organization, included work with the bald eagle & the red wolf",
+      "aliases": [
+        "World Wide Fund",
+        "World Wide Fund for Nature"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 42.108031853240206,
+          "title": "Red panda"
+        },
+        {
+          "rank": 2,
+          "score": 63.073699496772406,
+          "title": "Golden Eagle"
+        },
+        {
+          "rank": 3,
+          "score": 57.14299556948479,
+          "title": "Gray wolf"
+        },
+        {
+          "rank": 4,
+          "score": 47.94486816538758,
+          "title": "Hugo Wolf"
+        },
+        {
+          "rank": 5,
+          "score": 40.83649614119134,
+          "title": "Boy Scouts of America"
+        },
+        {
+          "rank": 6,
+          "score": 40.67495071782802,
+          "title": "Red-tailed Hawk"
+        },
+        {
+          "rank": 7,
+          "score": 40.604702958268774,
+          "title": "Hulk Hogan"
+        },
+        {
+          "rank": 8,
+          "score": 40.3508567727898,
+          "title": "Ari Wolfe"
+        },
+        {
+          "rank": 9,
+          "score": 40.05054974855349,
+          "title": "Independent Scout and Scout-like organizations in the United States"
+        },
+        {
+          "rank": 10,
+          "score": 39.59451160242817,
+          "title": "John Wolfe-Barry"
+        }
+      ]
+    },
+    {
+      "category": "CONSERVATION",
+      "clue": "Indonesia's largest lizard, it's protected from poachers, though we wish it could breathe fire to do the job itself",
+      "aliases": [
+        "Komodo dragon"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 55.20278068396743,
+          "title": "Komodo dragon"
+        },
+        {
+          "rank": 2,
+          "score": 47.73521820584164,
+          "title": "Places in The Hitchhiker's Guide to the Galaxy"
+        },
+        {
+          "rank": 3,
+          "score": 47.079073081318256,
+          "title": "Dingo"
+        },
+        {
+          "rank": 4,
+          "score": 47.0337241458918,
+          "title": "Yellowstone National Park"
+        },
+        {
+          "rank": 5,
+          "score": 46.05812993530715,
+          "title": "March on Washington for Jobs and Freedom"
+        },
+        {
+          "rank": 6,
+          "score": 45.54985436459321,
+          "title": "Reptile"
+        },
+        {
+          "rank": 7,
+          "score": 43.666065750443416,
+          "title": "Foreign relations of China"
+        },
+        {
+          "rank": 8,
+          "score": 43.46431827364497,
+          "title": "Sati (practice)"
+        },
+        {
+          "rank": 9,
+          "score": 43.33469840693798,
+          "title": "Fire apparatus"
+        },
+        {
+          "rank": 10,
+          "score": 43.32892816490125,
+          "title": "Hippopotamus"
+        }
+      ]
+    },
+    {
+      "category": "1920s NEWS FLASH!",
+      "clue": "Nov. 28, 1929! This man & his chief pilot Bernt Balchen fly to South Pole! Yowza! You'll be an admirable admiral, sir!",
+      "aliases": [
+        "Richard Byrd",
+        "Richard E. Byrd"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 68.74535579689555,
+          "title": "Roald Amundsen"
+        },
+        {
+          "rank": 2,
+          "score": 136.91397872620269,
+          "title": "Amundsen–Scott South Pole Station"
+        },
+        {
+          "rank": 3,
+          "score": 135.0375172660942,
+          "title": "Amundsen's South Pole expedition"
+        },
+        {
+          "rank": 4,
+          "score": 122.13055012894566,
+          "title": "1929"
+        },
+        {
+          "rank": 5,
+          "score": 96.91153324968546,
+          "title": "North Pole"
+        },
+        {
+          "rank": 6,
+          "score": 74.89080688328613,
+          "title": "Robert Falcon Scott"
+        },
+        {
+          "rank": 7,
+          "score": 73.79048528721954,
+          "title": "Ernest Shackleton"
+        },
+        {
+          "rank": 8,
+          "score": 70.29576321975038,
+          "title": "Hollow Earth"
+        },
+        {
+          "rank": 9,
+          "score": 68.1208437013351,
+          "title": "Carsten Borchgrevink"
+        },
+        {
+          "rank": 10,
+          "score": 65.09484935635004,
+          "title": "Pole star"
+        }
+      ]
+    },
+    {
+      "category": "CEMETERIES",
+      "clue": "On May 5, 1878 Alice Chambers was the last person buried in this Dodge City, Kansas cemetery",
+      "aliases": [
+        "Boot Hill"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 87.15957524289347,
+          "title": "Boot Hill"
+        },
+        {
+          "rank": 2,
+          "score": 136.2917888661917,
+          "title": "Dodge City (1939 film)"
+        },
+        {
+          "rank": 3,
+          "score": 90.64815549745228,
+          "title": "Doc Holliday"
+        },
+        {
+          "rank": 4,
+          "score": 71.93983400208718,
+          "title": "Gunsmoke"
+        },
+        {
+          "rank": 5,
+          "score": 62.15484319076693,
+          "title": "Samuel Jay Crumbine"
+        },
+        {
+          "rank": 6,
+          "score": 60.50145113806614,
+          "title": "Gunfight at the O.K. Corral"
+        },
+        {
+          "rank": 7,
+          "score": 58.996452517053,
+          "title": "American frontier"
+        },
+        {
+          "rank": 8,
+          "score": 53.375037473105934,
+          "title": "Jeron Harvey"
+        },
+        {
+          "rank": 9,
+          "score": 53.05493440447302,
+          "title": "Olivia de Havilland"
+        },
+        {
+          "rank": 10,
+          "score": 52.564710728846755,
+          "title": "Billy Al Bengston"
+        }
+      ]
+    },
+    {
+      "category": "CAMBODIAN HISTORY & CULTURE",
+      "clue": "The Royal Palace grounds feature a statue of King Norodom, who in the late 1800s was compelled to first put his country under the control of this European power; of course, it was sculpted in that country",
+      "aliases": [
+        "France"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 117.14879491510794,
+          "title": "History of France"
+        },
+        {
+          "rank": 2,
+          "score": 143.66641589187526,
+          "title": "Royal Palace (horse)"
+        },
+        {
+          "rank": 3,
+          "score": 118.58335035218555,
+          "title": "Politics of Cambodia"
+        },
+        {
+          "rank": 4,
+          "score": 113.77077608687712,
+          "title": "Louis XIV of France"
+        },
+        {
+          "rank": 5,
+          "score": 112.86428134215288,
+          "title": "Crown jewels"
+        },
+        {
+          "rank": 6,
+          "score": 110.79407548246597,
+          "title": "Paris"
+        },
+        {
+          "rank": 7,
+          "score": 110.6635916691728,
+          "title": "History of Cambodia"
+        },
+        {
+          "rank": 8,
+          "score": 108.67916963169297,
+          "title": "History of Madagascar"
+        },
+        {
+          "rank": 9,
+          "score": 108.39073412060715,
+          "title": "Thimphu"
+        },
+        {
+          "rank": 10,
+          "score": 108.05783858653506,
+          "title": "History of Nepal"
+        }
+      ]
+    },
+    {
+      "category": "HISTORICAL HODGEPODGE",
+      "clue": "In the 400s B.C. this Chinese philosopher went into exile for 12 years",
+      "aliases": [
+        "Confucius"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 36.90497818214914,
+          "title": "Confucius"
+        },
+        {
+          "rank": 2,
+          "score": 43.018990847365295,
+          "title": "Chinese music"
+        },
+        {
+          "rank": 3,
+          "score": 41.29299744150417,
+          "title": "Chinese philosophy"
+        },
+        {
+          "rank": 4,
+          "score": 40.27344804094956,
+          "title": "Sun Yat-sen"
+        },
+        {
+          "rank": 5,
+          "score": 40.00967314417016,
+          "title": "Porphyry (philosopher)"
+        },
+        {
+          "rank": 6,
+          "score": 38.41946660063957,
+          "title": "Chinese calendar"
+        },
+        {
+          "rank": 7,
+          "score": 37.94108873474324,
+          "title": "The Years of Rice and Salt"
+        },
+        {
+          "rank": 8,
+          "score": 37.79115404017858,
+          "title": "Chinese room"
+        },
+        {
+          "rank": 9,
+          "score": 36.9037420408095,
+          "title": "Chinese Indonesians"
+        },
+        {
+          "rank": 10,
+          "score": 36.65116030459559,
+          "title": "Chinese astrology"
+        }
+      ]
+    },
+    {
+      "category": "AFRICAN-AMERICAN WOMEN",
+      "clue": "Bessie Coleman, the first black woman licensed as a pilot, landed a street named in her honor at this Chicago airport",
+      "aliases": [
+        "O'Hare",
+        "O'Hare International Airport"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 83.89562752790337,
+          "title": "O'Hare International Airport"
+        },
+        {
+          "rank": 2,
+          "score": 93.91026100980112,
+          "title": "Lambert–St. Louis International Airport"
+        },
+        {
+          "rank": 3,
+          "score": 92.9259469818574,
+          "title": "Pilot (aeronautics)"
+        },
+        {
+          "rank": 4,
+          "score": 61.122871266517805,
+          "title": "Chicago Midway International Airport"
+        },
+        {
+          "rank": 5,
+          "score": 59.000627995671096,
+          "title": "Louis Armstrong"
+        },
+        {
+          "rank": 6,
+          "score": 56.87278520752949,
+          "title": "Columbus, Ohio"
+        },
+        {
+          "rank": 7,
+          "score": 54.77760021152694,
+          "title": "The Pilot (Friends)"
+        },
+        {
+          "rank": 8,
+          "score": 52.671115409889815,
+          "title": "Diamond Bessie"
+        },
+        {
+          "rank": 9,
+          "score": 52.65050954696768,
+          "title": "Columbia, South Carolina"
+        },
+        {
+          "rank": 10,
+          "score": 52.02194178381876,
+          "title": "Airplane!"
+        }
+      ]
+    },
+    {
+      "category": "HISTORICAL HODGEPODGE",
+      "clue": "The Ammonites held sway in this Mideast country in the 1200s B.C. & the capital is named for them",
+      "aliases": [
+        "Jordan"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 41.152795486493496,
+          "title": "Canaan"
+        },
+        {
+          "rank": 2,
+          "score": 39.92539686227527,
+          "title": "History of Yemen"
+        },
+        {
+          "rank": 3,
+          "score": 35.90885274608688,
+          "title": "Capitalism"
+        },
+        {
+          "rank": 4,
+          "score": 34.72340382814614,
+          "title": "History of ancient Israel and Judah"
+        },
+        {
+          "rank": 5,
+          "score": 34.649126613689525,
+          "title": "Raichur district"
+        },
+        {
+          "rank": 6,
+          "score": 34.46354213155022,
+          "title": "Social capital"
+        },
+        {
+          "rank": 7,
+          "score": 33.30565697579408,
+          "title": "Dacians"
+        },
+        {
+          "rank": 8,
+          "score": 32.57431210020321,
+          "title": "History of Armenia"
+        },
+        {
+          "rank": 9,
+          "score": 32.42026163247672,
+          "title": "Culture of Italy"
+        },
+        {
+          "rank": 10,
+          "score": 32.22687753564621,
+          "title": "Country music"
+        }
+      ]
+    },
+    {
+      "category": "HE PLAYED A GUY NAMED JACK RYAN IN...",
+      "clue": "\"The Sum of All Fears\"; he also won a screenwriting Oscar for \"Good Will Hunting\"",
+      "aliases": [
+        "Ben Affleck"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 182.56652873515606,
+          "title": "Ben Affleck"
+        },
+        {
+          "rank": 2,
+          "score": 104.2339635403378,
+          "title": "Gus Van Sant"
+        },
+        {
+          "rank": 3,
+          "score": 96.49228926975398,
+          "title": "Liev Schreiber"
+        },
+        {
+          "rank": 4,
+          "score": 86.14409571629298,
+          "title": "Permissive Action Link"
+        },
+        {
+          "rank": 5,
+          "score": 83.0257387478236,
+          "title": "Morgan Freeman"
+        },
+        {
+          "rank": 6,
+          "score": 81.18597878731669,
+          "title": "Chris Moore (film producer)"
+        },
+        {
+          "rank": 7,
+          "score": 79.80058875573768,
+          "title": "Left Behind"
+        },
+        {
+          "rank": 8,
+          "score": 77.85584156079283,
+          "title": "Miss Misery"
+        },
+        {
+          "rank": 9,
+          "score": 73.25702793416656,
+          "title": "Prince of Persia (2008 video game)"
+        },
+        {
+          "rank": 10,
+          "score": 71.9336563198189,
+          "title": "Fear and Trembling"
+        }
+      ]
+    },
+    {
+      "category": "POTPOURRI",
+      "clue": "One of the N.Y. Times' headlines on this landmark 1973 Supreme Court decision was \"Cardinals shocked\"",
+      "aliases": [
+        "Roe v. Wade"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 147.45839134394035,
+          "title": "New York Supreme Court"
+        },
+        {
+          "rank": 2,
+          "score": 139.2360391893084,
+          "title": "Supreme Court cases involving Jehovah's Witnesses by country"
+        },
+        {
+          "rank": 3,
+          "score": 130.50526487765413,
+          "title": "Rhode Island Supreme Court"
+        },
+        {
+          "rank": 4,
+          "score": 129.56884457697043,
+          "title": "Washington Supreme Court"
+        },
+        {
+          "rank": 5,
+          "score": 118.78919752138506,
+          "title": "2009 term per curiam opinions of the Supreme Court of the United States"
+        },
+        {
+          "rank": 6,
+          "score": 115.79564754750828,
+          "title": "2011 term opinions of the Supreme Court of the United States"
+        },
+        {
+          "rank": 7,
+          "score": 113.49415005070907,
+          "title": "Supreme Court of Justice of Paraguay"
+        },
+        {
+          "rank": 8,
+          "score": 113.0888508749525,
+          "title": "Chief Justice of the Supreme Court of Puerto Rico"
+        },
+        {
+          "rank": 9,
+          "score": 111.95838883962051,
+          "title": "Supreme Court of Judicature Act 1873"
+        },
+        {
+          "rank": 10,
+          "score": 110.73181330947214,
+          "title": "2009 term United States Supreme Court opinions of Anthony Kennedy"
+        }
+      ]
+    },
+    {
+      "category": "I'M BURNIN' FOR YOU",
+      "clue": "France's Philip IV--known as \"The Fair\"--had Jacques De Molay, the last Grand Master of this order, burned in 1314",
+      "aliases": [
+        "Knights Templar"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 221.95225067755737,
+          "title": "Knights Templar"
+        },
+        {
+          "rank": 2,
+          "score": 319.7055725886298,
+          "title": "Philip IV of France"
+        },
+        {
+          "rank": 3,
+          "score": 142.59919488398336,
+          "title": "Paris"
+        },
+        {
+          "rank": 4,
+          "score": 127.57950059157757,
+          "title": "Philip III of France"
+        },
+        {
+          "rank": 5,
+          "score": 119.14920389826631,
+          "title": "Ferdinand IV of Castile"
+        },
+        {
+          "rank": 6,
+          "score": 116.5577624991028,
+          "title": "1939 New York World's Fair"
+        },
+        {
+          "rank": 7,
+          "score": 114.16548575668891,
+          "title": "World's fair"
+        },
+        {
+          "rank": 8,
+          "score": 111.13062826902515,
+          "title": "Fair City"
+        },
+        {
+          "rank": 9,
+          "score": 107.18892385376519,
+          "title": "Henry IV of France"
+        },
+        {
+          "rank": 10,
+          "score": 106.5857890998284,
+          "title": "Fair trade"
+        }
+      ]
+    },
+    {
+      "category": "STATE OF THE ART MUSEUM (Alex: We'll give you the museum. You give us the state.)",
+      "clue": "The Georgia O'Keeffe Museum",
+      "aliases": [
+        "New Mexico"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 33.959623299043585,
+          "title": "Kain O'Keeffe"
+        },
+        {
+          "rank": 2,
+          "score": 33.91972577409432,
+          "title": "Alfred Stieglitz"
+        },
+        {
+          "rank": 3,
+          "score": 30.44023215044356,
+          "title": "Museum of Modern Art"
+        },
+        {
+          "rank": 4,
+          "score": 28.455027954811815,
+          "title": "Georgia (U.S. state)"
+        },
+        {
+          "rank": 5,
+          "score": 28.00877695733837,
+          "title": "History of Augusta, Georgia"
+        },
+        {
+          "rank": 6,
+          "score": 27.9937271317117,
+          "title": "Old Governor's Mansion (Milledgeville, Georgia)"
+        },
+        {
+          "rank": 7,
+          "score": 27.52538063478671,
+          "title": "Swan House (Atlanta, Georgia)"
+        },
+        {
+          "rank": 8,
+          "score": 27.25310078891485,
+          "title": "National Museum of Commercial Aviation"
+        },
+        {
+          "rank": 9,
+          "score": 25.677499028223394,
+          "title": "Kristin Bair O'Keeffe"
+        },
+        {
+          "rank": 10,
+          "score": 25.24934018373969,
+          "title": "Tamar of Georgia"
+        }
+      ]
+    },
+    {
+      "category": "AFRICAN CITIES",
+      "clue": "The name of this largest Moroccan city combines 2 Spanish words",
+      "aliases": [
+        "Casablanca"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 42.317936867159624,
+          "title": "Casablanca"
+        },
+        {
+          "rank": 2,
+          "score": 46.4118755234627,
+          "title": "Spanish language"
+        },
+        {
+          "rank": 3,
+          "score": 42.489262808270716,
+          "title": "Marrakesh"
+        },
+        {
+          "rank": 4,
+          "score": 39.17070676485876,
+          "title": "Spain"
+        },
+        {
+          "rank": 5,
+          "score": 37.72000700798671,
+          "title": "Agadir"
+        },
+        {
+          "rank": 6,
+          "score": 37.06444901231439,
+          "title": "Mexico City"
+        },
+        {
+          "rank": 7,
+          "score": 36.76851952441049,
+          "title": "Oran"
+        },
+        {
+          "rank": 8,
+          "score": 35.75707570635966,
+          "title": "History of Western Sahara"
+        },
+        {
+          "rank": 9,
+          "score": 35.60186142549247,
+          "title": "Western Sahara"
+        },
+        {
+          "rank": 10,
+          "score": 35.559878537700165,
+          "title": "Ho Chi Minh City"
+        }
+      ]
+    },
+    {
+      "category": "NAME THE PARENT COMPANY",
+      "clue": "Jell-O",
+      "aliases": [
+        "Kraft Foods"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 33.76850157558246,
+          "title": "Jelling stones"
+        },
+        {
+          "rank": 2,
+          "score": 32.79097825362997,
+          "title": "Dietrich Jells"
+        },
+        {
+          "rank": 3,
+          "score": 12.47120953549133,
+          "title": "Jamie Caven"
+        },
+        {
+          "rank": 4,
+          "score": 12.068473249886356,
+          "title": "Cold Stone Creamery"
+        },
+        {
+          "rank": 5,
+          "score": 11.662231607950071,
+          "title": "Music of Sudan"
+        },
+        {
+          "rank": 6,
+          "score": 11.162442427745912,
+          "title": "3rd Rock from the Sun"
+        },
+        {
+          "rank": 7,
+          "score": 9.87404588803795,
+          "title": "Cuisine of the Midwestern United States"
+        },
+        {
+          "rank": 8,
+          "score": 9.509516615652613,
+          "title": "Hamont-Achel"
+        },
+        {
+          "rank": 9,
+          "score": 9.359616217033805,
+          "title": "Camp Roger"
+        },
+        {
+          "rank": 10,
+          "score": 9.350888590572875,
+          "title": "Valery Ortiz"
+        }
+      ]
+    },
+    {
+      "category": "GOLDEN GLOBE WINNERS",
+      "clue": "2011: Chicago mayor Tom Kane",
+      "aliases": [
+        "Kelsey Grammer"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 54.59639695504397,
+          "title": "Yoda"
+        },
+        {
+          "rank": 2,
+          "score": 45.86610028043613,
+          "title": "Citizen Kane"
+        },
+        {
+          "rank": 3,
+          "score": 41.39555570331238,
+          "title": "Chicago Cubs"
+        },
+        {
+          "rank": 4,
+          "score": 40.08029995558297,
+          "title": "Samuel Witwer"
+        },
+        {
+          "rank": 5,
+          "score": 36.167591217329786,
+          "title": "Larry Kane"
+        },
+        {
+          "rank": 6,
+          "score": 35.84259527657033,
+          "title": "Boba Fett"
+        },
+        {
+          "rank": 7,
+          "score": 34.14275416081562,
+          "title": "Roger Ebert"
+        },
+        {
+          "rank": 8,
+          "score": 34.12744503708885,
+          "title": "Tom Bosley"
+        },
+        {
+          "rank": 9,
+          "score": 33.796031343819365,
+          "title": "Carol Kane"
+        },
+        {
+          "rank": 10,
+          "score": 32.37201548703379,
+          "title": "Chinatown, Chicago"
+        }
+      ]
+    },
+    {
+      "category": "THE RESIDENTS",
+      "clue": "Title residence of Otter, Flounder, Pinto & Bluto in a 1978 comedy",
+      "aliases": [
+        "Animal House"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 81.41692522989132,
+          "title": "Animal House"
+        },
+        {
+          "rank": 2,
+          "score": 38.97781446289954,
+          "title": "Ford Pinto"
+        },
+        {
+          "rank": 3,
+          "score": 35.149536918676986,
+          "title": "National Lampoon (magazine)"
+        },
+        {
+          "rank": 4,
+          "score": 32.28052487990891,
+          "title": "Otter (theorem prover)"
+        },
+        {
+          "rank": 5,
+          "score": 31.508900333502254,
+          "title": "Ernesto Pinto-Bazurco"
+        },
+        {
+          "rank": 6,
+          "score": 31.11202828023748,
+          "title": "Bozo the Clown"
+        },
+        {
+          "rank": 7,
+          "score": 30.65958357143576,
+          "title": "Evansville Otters"
+        },
+        {
+          "rank": 8,
+          "score": 30.36872454447402,
+          "title": "De Havilland Canada DHC-6 Twin Otter"
+        },
+        {
+          "rank": 9,
+          "score": 29.42371013855509,
+          "title": "Screwball comedy film"
+        },
+        {
+          "rank": 10,
+          "score": 28.582736658713078,
+          "title": "Cheech & Chong"
+        }
+      ]
+    },
+    {
+      "category": "UCLA CELEBRITY ALUMNI",
+      "clue": "Neurobiologist Amy Farrah Fowler on \"The Big Bang Theory\", in real life she has a Ph.D. in neuroscience from UCLA",
+      "aliases": [
+        "Mayim Bialik"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 237.83107925110863,
+          "title": "Mayim Bialik"
+        },
+        {
+          "rank": 2,
+          "score": 207.71105490327122,
+          "title": "Big Bang nucleosynthesis"
+        },
+        {
+          "rank": 3,
+          "score": 186.16071602335697,
+          "title": "Big Bounce"
+        },
+        {
+          "rank": 4,
+          "score": 182.4382335079758,
+          "title": "Physical cosmology"
+        },
+        {
+          "rank": 5,
+          "score": 173.51176100925235,
+          "title": "Meaning of life"
+        },
+        {
+          "rank": 6,
+          "score": 173.40761099350604,
+          "title": "Inflation (cosmology)"
+        },
+        {
+          "rank": 7,
+          "score": 171.69723570375456,
+          "title": "Tom Van Flandern"
+        },
+        {
+          "rank": 8,
+          "score": 170.23825080252786,
+          "title": "Olbers' paradox"
+        },
+        {
+          "rank": 9,
+          "score": 170.1982220078368,
+          "title": "Cosmic microwave background"
+        },
+        {
+          "rank": 10,
+          "score": 169.35719452264564,
+          "title": "Howard Wolowitz"
+        }
+      ]
+    },
+    {
+      "category": "NOTES FROM THE CAMPAIGN TRAIL",
+      "clue": "In \"The Deadlocked Election of 1800\", James R. Sharp outlines the fall of this dueling vice president",
+      "aliases": [
+        "Aaron Burr"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 56.624231586503555,
+          "title": "Aaron Burr"
+        },
+        {
+          "rank": 2,
+          "score": 100.61778785807945,
+          "title": "Vice President of the United States"
+        },
+        {
+          "rank": 3,
+          "score": 60.078034573600966,
+          "title": "George Clinton (vice president)"
+        },
+        {
+          "rank": 4,
+          "score": 56.25570062489429,
+          "title": "Presidency of Thomas Jefferson"
+        },
+        {
+          "rank": 5,
+          "score": 45.999040281201715,
+          "title": "James Bowie"
+        },
+        {
+          "rank": 6,
+          "score": 45.462824542804455,
+          "title": "John C. Breckinridge"
+        },
+        {
+          "rank": 7,
+          "score": 40.7748050637872,
+          "title": "President pro tempore of the United States Senate"
+        },
+        {
+          "rank": 8,
+          "score": 40.73278736745434,
+          "title": "George W. Bush's first term as President of the United States"
+        },
+        {
+          "rank": 9,
+          "score": 40.217054332576616,
+          "title": "Richard Mentor Johnson"
+        },
+        {
+          "rank": 10,
+          "score": 40.08426364732194,
+          "title": "George W. Bush's second term as President of the United States"
+        }
+      ]
+    },
+    {
+      "category": "\"TIN\" MEN",
+      "clue": "He served in the KGB before becoming president & then prime minister of Russia",
+      "aliases": [
+        "Vladimir Putin",
+        "Putin"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 1052.3375791099038,
+          "title": "Prime Minister of Thailand"
+        },
+        {
+          "rank": 2,
+          "score": 1063.4046924552852,
+          "title": "Prime Minister of Denmark"
+        },
+        {
+          "rank": 3,
+          "score": 1061.624055284744,
+          "title": "Prime Minister of Greece"
+        },
+        {
+          "rank": 4,
+          "score": 1058.5198821103427,
+          "title": "Prime Minister of France"
+        },
+        {
+          "rank": 5,
+          "score": 1057.1133548432992,
+          "title": "Prime Minister of Rhodesia"
+        },
+        {
+          "rank": 6,
+          "score": 1051.4102603557599,
+          "title": "Prime Minister of the Netherlands"
+        },
+        {
+          "rank": 7,
+          "score": 1051.2276994019487,
+          "title": "Prime Minister of Italy"
+        },
+        {
+          "rank": 8,
+          "score": 1049.6027939084343,
+          "title": "Prime Minister of Romania"
+        },
+        {
+          "rank": 9,
+          "score": 1047.3259324390742,
+          "title": "Prime Minister of Jordan"
+        },
+        {
+          "rank": 10,
+          "score": 1047.21185191321,
+          "title": "Prime Minister of Dominica"
+        }
+      ]
+    },
+    {
+      "category": "AFRICAN-AMERICAN WOMEN",
+      "clue": "When asked to describe herself, she says first & foremost, she is Malia & Sasha's mom",
+      "aliases": [
+        "Michelle Obama"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 121.76910966427862,
+          "title": "Michelle Obama"
+        },
+        {
+          "rank": 2,
+          "score": 43.849676107571725,
+          "title": "Srinagarindra"
+        },
+        {
+          "rank": 3,
+          "score": 42.88679385452687,
+          "title": "Sasha Pieterse"
+        },
+        {
+          "rank": 4,
+          "score": 42.51314796799089,
+          "title": "Sasha (DJ)"
+        },
+        {
+          "rank": 5,
+          "score": 39.91558748109145,
+          "title": "Mars Needs Moms"
+        },
+        {
+          "rank": 6,
+          "score": 39.73466261007133,
+          "title": "Stevie Nicks"
+        },
+        {
+          "rank": 7,
+          "score": 39.587014350816496,
+          "title": "Liz Malia"
+        },
+        {
+          "rank": 8,
+          "score": 39.53858852863098,
+          "title": "Billie Holiday"
+        },
+        {
+          "rank": 9,
+          "score": 39.47048170827667,
+          "title": "Maria Callas"
+        },
+        {
+          "rank": 10,
+          "score": 39.33093895192554,
+          "title": "Sasha & John Digweed"
+        }
+      ]
+    },
+    {
+      "category": "POETS & POETRY",
+      "clue": "She wrote, \"My candle burns at both ends... but, ah, my foes, and oh, my friends--it gives a lovely light\"",
+      "aliases": [
+        "Edna St. Vincent Millay"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 69.09454257502173,
+          "title": "Madama Butterfly"
+        },
+        {
+          "rank": 2,
+          "score": 67.75317527224232,
+          "title": "Rent (musical)"
+        },
+        {
+          "rank": 3,
+          "score": 67.05447123008713,
+          "title": "Hanukkah"
+        },
+        {
+          "rank": 4,
+          "score": 66.95619234090765,
+          "title": "Don Giovanni"
+        },
+        {
+          "rank": 5,
+          "score": 66.78056961989795,
+          "title": "Doctor Light (Arthur Light)"
+        },
+        {
+          "rank": 6,
+          "score": 66.43992684519256,
+          "title": "Maria Callas"
+        },
+        {
+          "rank": 7,
+          "score": 65.20586363126283,
+          "title": "Il trovatore"
+        },
+        {
+          "rank": 8,
+          "score": 64.00310347517367,
+          "title": "La bohème"
+        },
+        {
+          "rank": 9,
+          "score": 63.677532896887946,
+          "title": "Ronnie Barker"
+        },
+        {
+          "rank": 10,
+          "score": 63.362297823527015,
+          "title": "Thérèse of Lisieux"
+        }
+      ]
+    },
+    {
+      "category": "CAPITAL CITY CHURCHES (Alex: We'll give you the church. You tell us the capital city in which it is located.)",
+      "clue": "In this Finnish city, the Lutheran Cathedral, also known as Tuomiokirkko",
+      "aliases": [
+        "Helsinki"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 58.621819493565226,
+          "title": "Magdeburg"
+        },
+        {
+          "rank": 2,
+          "score": 53.196084885638605,
+          "title": "Finnish Orthodox Church"
+        },
+        {
+          "rank": 3,
+          "score": 42.42986748175182,
+          "title": "Evangelical Lutheran Church in America"
+        },
+        {
+          "rank": 4,
+          "score": 36.66687908094813,
+          "title": "Lutheran Church–Missouri Synod"
+        },
+        {
+          "rank": 5,
+          "score": 36.52729211378653,
+          "title": "History of Finland"
+        },
+        {
+          "rank": 6,
+          "score": 36.43633087757572,
+          "title": "Tampere"
+        },
+        {
+          "rank": 7,
+          "score": 36.197359254985656,
+          "title": "Savonlinna"
+        },
+        {
+          "rank": 8,
+          "score": 35.295580603238136,
+          "title": "Laestadian Lutheran Church"
+        },
+        {
+          "rank": 9,
+          "score": 35.25111630239514,
+          "title": "Porvoo"
+        },
+        {
+          "rank": 10,
+          "score": 35.24733402157804,
+          "title": "Espoo"
+        }
+      ]
+    },
+    {
+      "category": "NAME THE PARENT COMPANY",
+      "clue": "Milton Bradley games",
+      "aliases": [
+        "Hasbro"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 69.28877929992443,
+          "title": "Hasbro"
+        },
+        {
+          "rank": 2,
+          "score": 82.56165154921221,
+          "title": "Axis & Allies"
+        },
+        {
+          "rank": 3,
+          "score": 82.47328460567138,
+          "title": "Battleship (game)"
+        },
+        {
+          "rank": 4,
+          "score": 77.3008181921805,
+          "title": "Vectrex"
+        },
+        {
+          "rank": 5,
+          "score": 73.2828302418045,
+          "title": "Microvision"
+        },
+        {
+          "rank": 6,
+          "score": 70.61941594247854,
+          "title": "Handheld game console"
+        },
+        {
+          "rank": 7,
+          "score": 69.2978268481887,
+          "title": "Snakes and Ladders"
+        },
+        {
+          "rank": 8,
+          "score": 62.53388480123151,
+          "title": "Crayon"
+        },
+        {
+          "rank": 9,
+          "score": 60.58045137758035,
+          "title": "The Price Is Right (U.S. game show)"
+        },
+        {
+          "rank": 10,
+          "score": 53.72898141848228,
+          "title": "Snake (video game)"
+        }
+      ]
+    },
+    {
+      "category": "OLD YEAR'S RESOLUTIONS",
+      "clue": "The Kentucky & Virginia resolutions were passed to protest these controversial 1798 acts of Congress",
+      "aliases": [
+        "The Alien and Sedition Acts"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 205.36775832329062,
+          "title": "Kentucky and Virginia Resolutions"
+        },
+        {
+          "rank": 2,
+          "score": 84.14039873075473,
+          "title": "History of slavery in Indiana"
+        },
+        {
+          "rank": 3,
+          "score": 67.37197639992854,
+          "title": "Stamp Act 1765"
+        },
+        {
+          "rank": 4,
+          "score": 65.04721905800349,
+          "title": "Governor of Kentucky"
+        },
+        {
+          "rank": 5,
+          "score": 63.94391373494602,
+          "title": "Hartford Convention"
+        },
+        {
+          "rank": 6,
+          "score": 61.38520853702457,
+          "title": "West Virginia"
+        },
+        {
+          "rank": 7,
+          "score": 60.577427972553735,
+          "title": "Second Continental Congress"
+        },
+        {
+          "rank": 8,
+          "score": 59.99363115234083,
+          "title": "Slavery in the United States"
+        },
+        {
+          "rank": 9,
+          "score": 58.4564026866135,
+          "title": "Lotto South"
+        },
+        {
+          "rank": 10,
+          "score": 57.823306647468634,
+          "title": "Confederate States of America"
+        }
+      ]
+    },
+    {
+      "category": "'80s NO.1 HITMAKERS",
+      "clue": "1983: \"Beat It\"",
+      "aliases": [
+        "Michael Jackson"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 95.21584898428539,
+          "title": "Blast beat"
+        },
+        {
+          "rank": 2,
+          "score": 91.30586026064489,
+          "title": "Beats Electronics"
+        },
+        {
+          "rank": 3,
+          "score": 90.87365735117086,
+          "title": "Beat Happening"
+        },
+        {
+          "rank": 4,
+          "score": 90.39657220864737,
+          "title": "The Beat Bully"
+        },
+        {
+          "rank": 5,
+          "score": 89.79252523340622,
+          "title": "Beat Scene"
+        },
+        {
+          "rank": 6,
+          "score": 87.31917413805692,
+          "title": "Skipping a Beat"
+        },
+        {
+          "rank": 7,
+          "score": 86.87462272206344,
+          "title": "Down Beat"
+        },
+        {
+          "rank": 8,
+          "score": 86.76236746320603,
+          "title": "Atlanta Beat (WUSA)"
+        },
+        {
+          "rank": 9,
+          "score": 86.6358055648383,
+          "title": "Culture Beat"
+        },
+        {
+          "rank": 10,
+          "score": 84.94388678396889,
+          "title": "IQ Beats"
+        }
+      ]
+    },
+    {
+      "category": "GOLDEN GLOBE WINNERS",
+      "clue": "In 2009: Sookie Stackhouse",
+      "aliases": [
+        "Anna Paquin"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 89.5629905341693,
+          "title": "Anna Paquin"
+        },
+        {
+          "rank": 2,
+          "score": 115.95163971187351,
+          "title": "True Blood"
+        },
+        {
+          "rank": 3,
+          "score": 17.10030408021077,
+          "title": "2009 Pishin bombing"
+        },
+        {
+          "rank": 4,
+          "score": 17.004944422551226,
+          "title": "2009"
+        },
+        {
+          "rank": 5,
+          "score": 16.83415176524656,
+          "title": "2009 AFC Cup"
+        },
+        {
+          "rank": 6,
+          "score": 16.83113956743852,
+          "title": "World Tour 2009"
+        },
+        {
+          "rank": 7,
+          "score": 16.79769985153289,
+          "title": "2009 in Irish music"
+        },
+        {
+          "rank": 8,
+          "score": 16.760864289534716,
+          "title": "Miss World 2009"
+        },
+        {
+          "rank": 9,
+          "score": 16.738755542081122,
+          "title": "FIBA EuroBasket 2009 qualification"
+        },
+        {
+          "rank": 10,
+          "score": 16.731697986846953,
+          "title": "2009 Korean Series"
+        }
+      ]
+    },
+    {
+      "category": "HISTORICAL HODGEPODGE",
+      "clue": "This member of the Nixon & Ford cabinets was born in Furth, Germany in 1923",
+      "aliases": [
+        "Henry Kissinger"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 49.623869217060054,
+          "title": "Henry Kissinger"
+        },
+        {
+          "rank": 2,
+          "score": 83.81471899890427,
+          "title": "History of the United States (1964–80)"
+        },
+        {
+          "rank": 3,
+          "score": 83.21014678537364,
+          "title": "John Ford"
+        },
+        {
+          "rank": 4,
+          "score": 76.741001597195,
+          "title": "William B. Saxbe"
+        },
+        {
+          "rank": 5,
+          "score": 74.4306926704083,
+          "title": "Zbigniew Brzezinski"
+        },
+        {
+          "rank": 6,
+          "score": 55.95390710365959,
+          "title": "Richard Nixon"
+        },
+        {
+          "rank": 7,
+          "score": 52.21302722100242,
+          "title": "Securities and Exchange Commission appointees"
+        },
+        {
+          "rank": 8,
+          "score": 46.54168218304845,
+          "title": "Nixon (film)"
+        },
+        {
+          "rank": 9,
+          "score": 44.82300093530441,
+          "title": "Henry Ford"
+        },
+        {
+          "rank": 10,
+          "score": 41.89113781554985,
+          "title": "Guilford Dudley (ambassador)"
+        }
+      ]
+    },
+    {
+      "category": "CAPITAL CITY CHURCHES (Alex: We'll give you the church. You tell us the capital city in which it is located.)",
+      "clue": "The High Kirk of St. Giles, where John Knox was minister",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 84.24188707948257,
+          "title": "Church of Scotland"
+        },
+        {
+          "rank": 2,
+          "score": 85.91476786063247,
+          "title": "John Frush Knox"
+        },
+        {
+          "rank": 3,
+          "score": 85.4220575038899,
+          "title": "Knox Grammar School"
+        },
+        {
+          "rank": 4,
+          "score": 80.9422589672466,
+          "title": "History of Scotland"
+        },
+        {
+          "rank": 5,
+          "score": 79.42537681907163,
+          "title": "Scottish Episcopal Church"
+        },
+        {
+          "rank": 6,
+          "score": 73.73079327020196,
+          "title": "Perth, Scotland"
+        },
+        {
+          "rank": 7,
+          "score": 72.96393895778253,
+          "title": "James Douglas, 4th Earl of Morton"
+        },
+        {
+          "rank": 8,
+          "score": 69.5469759619203,
+          "title": "Stobo Kirk"
+        },
+        {
+          "rank": 9,
+          "score": 68.89952248978193,
+          "title": "Knox College (Illinois)"
+        },
+        {
+          "rank": 10,
+          "score": 68.87867521648117,
+          "title": "William Whittingham"
+        }
+      ]
+    },
+    {
+      "category": "UCLA CELEBRITY ALUMNI",
+      "clue": "For the brief time he attended, he was a rebel with a cause, even landing a lead role in a 1950 stage production",
+      "aliases": [
+        "James Dean"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 62.85670353791988,
+          "title": "James Dean"
+        },
+        {
+          "rank": 2,
+          "score": 68.30519016941274,
+          "title": "Rebel Without a Cause"
+        },
+        {
+          "rank": 3,
+          "score": 61.23962382159514,
+          "title": "Harold Pinter"
+        },
+        {
+          "rank": 4,
+          "score": 60.78269754627672,
+          "title": "Humphrey Bogart"
+        },
+        {
+          "rank": 5,
+          "score": 59.75578012866984,
+          "title": "John Huston"
+        },
+        {
+          "rank": 6,
+          "score": 58.766480524540334,
+          "title": "Mau Mau Uprising"
+        },
+        {
+          "rank": 7,
+          "score": 58.549122422530324,
+          "title": "Fidel Castro"
+        },
+        {
+          "rank": 8,
+          "score": 58.19212727512654,
+          "title": "Natalie Wood"
+        },
+        {
+          "rank": 9,
+          "score": 57.75497779771922,
+          "title": "Errol Flynn"
+        },
+        {
+          "rank": 10,
+          "score": 57.4059675203416,
+          "title": "Charlton Heston"
+        }
+      ]
+    },
+    {
+      "category": "NAME THE PARENT COMPANY",
+      "clue": "Fisher-Price toys",
+      "aliases": [
+        "Mattel"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 25.73086626857996,
+          "title": "Mattel"
+        },
+        {
+          "rank": 2,
+          "score": 40.32647787361891,
+          "title": "Toy Town Museum"
+        },
+        {
+          "rank": 3,
+          "score": 31.6249016664896,
+          "title": "Little People"
+        },
+        {
+          "rank": 4,
+          "score": 31.568256081647565,
+          "title": "Fisher's fundamental theorem of natural selection"
+        },
+        {
+          "rank": 5,
+          "score": 30.917684061455667,
+          "title": "Transformers (toy line)"
+        },
+        {
+          "rank": 6,
+          "score": 29.005103573872393,
+          "title": "Toy Story 2"
+        },
+        {
+          "rank": 7,
+          "score": 25.97023959258221,
+          "title": "Eddie Fisher (singer)"
+        },
+        {
+          "rank": 8,
+          "score": 25.82108913512088,
+          "title": "Lee Fisher"
+        },
+        {
+          "rank": 9,
+          "score": 25.69393855730672,
+          "title": "Buzzy Bee"
+        },
+        {
+          "rank": 10,
+          "score": 25.642481197959256,
+          "title": "Roger Fisher (academic)"
+        }
+      ]
+    },
+    {
+      "category": "HISTORICAL QUOTES",
+      "clue": "In a 1959 American kitchen exhibit in Moscow, he told Khrushchev, \"In America, we like to make life easier for women\"",
+      "aliases": [
+        "Richard Nixon",
+        "Nixon"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 54.895644185765654,
+          "title": "Richard Nixon"
+        },
+        {
+          "rank": 2,
+          "score": 82.64225761705562,
+          "title": "American National Exhibition"
+        },
+        {
+          "rank": 3,
+          "score": 62.76352253619791,
+          "title": "Fidel Castro"
+        },
+        {
+          "rank": 4,
+          "score": 59.51758406268279,
+          "title": "Cuban missile crisis"
+        },
+        {
+          "rank": 5,
+          "score": 59.45149536168364,
+          "title": "History of the United States (1945–64)"
+        },
+        {
+          "rank": 6,
+          "score": 56.7823580228188,
+          "title": "Konrad Adenauer"
+        },
+        {
+          "rank": 7,
+          "score": 56.252318908464105,
+          "title": "Charles de Gaulle"
+        },
+        {
+          "rank": 8,
+          "score": 55.803494625573734,
+          "title": "Herbert Kitchener, 1st Earl Kitchener"
+        },
+        {
+          "rank": 9,
+          "score": 55.60639581372942,
+          "title": "Ken Russell"
+        },
+        {
+          "rank": 10,
+          "score": 54.22735962784634,
+          "title": "Lee Harvey Oswald"
+        }
+      ]
+    },
+    {
+      "category": "POETS & POETRY",
+      "clue": "One of his \"Tales of a Wayside Inn\" begins, \"Listen, my children, and you shall hear of the midnight ride of Paul Revere\"",
+      "aliases": [
+        "Henry Wadsworth Longfellow"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 75.7360071807908,
+          "title": "Henry Wadsworth Longfellow"
+        },
+        {
+          "rank": 2,
+          "score": 164.33464278432515,
+          "title": "Paul Revere & the Raiders"
+        },
+        {
+          "rank": 3,
+          "score": 110.6997226237169,
+          "title": "Óláfs saga Tryggvasonar"
+        },
+        {
+          "rank": 4,
+          "score": 83.39792832219804,
+          "title": "William Dawes"
+        },
+        {
+          "rank": 5,
+          "score": 74.57937395115106,
+          "title": "Stacy's Tavern"
+        },
+        {
+          "rank": 6,
+          "score": 69.55128267768694,
+          "title": "Rush Limbaugh"
+        },
+        {
+          "rank": 7,
+          "score": 68.37644886199357,
+          "title": "Oswald Eve"
+        },
+        {
+          "rank": 8,
+          "score": 67.04707716308808,
+          "title": "Deborah Sampson"
+        },
+        {
+          "rank": 9,
+          "score": 62.43033651626482,
+          "title": "Phillips Academy"
+        },
+        {
+          "rank": 10,
+          "score": 58.37606285337648,
+          "title": "Neil Innes"
+        }
+      ]
+    },
+    {
+      "category": "NOTES FROM THE CAMPAIGN TRAIL",
+      "clue": "This bestseller about problems on the McCain-Palin ticket became an HBO movie with Julianne Moore",
+      "aliases": [
+        "Game Change"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 84.25466045987349,
+          "title": "Game Change"
+        },
+        {
+          "rank": 2,
+          "score": 92.96393437613366,
+          "title": "Hannibal (film)"
+        },
+        {
+          "rank": 3,
+          "score": 64.75194449934499,
+          "title": "Tom Ford"
+        },
+        {
+          "rank": 4,
+          "score": 64.4689840427469,
+          "title": "Michael Crichton"
+        },
+        {
+          "rank": 5,
+          "score": 57.789550198072305,
+          "title": "Gus Van Sant"
+        },
+        {
+          "rank": 6,
+          "score": 53.871346871433175,
+          "title": "Meryl Streep"
+        },
+        {
+          "rank": 7,
+          "score": 53.3785545158134,
+          "title": "Nicole Kidman"
+        },
+        {
+          "rank": 8,
+          "score": 52.21927628662138,
+          "title": "Liv Tyler"
+        },
+        {
+          "rank": 9,
+          "score": 51.930409544799296,
+          "title": "Marisa Tomei"
+        },
+        {
+          "rank": 10,
+          "score": 51.409630836862824,
+          "title": "Scarlet's Walk"
+        }
+      ]
+    },
+    {
+      "category": "THAT 20-AUGHTS SHOW",
+      "clue": "A 2-part episode of \"JAG\" introduced this Mark Harmon drama",
+      "aliases": [
+        "NCIS"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 55.10437701087105,
+          "title": "The West Wing"
+        },
+        {
+          "rank": 2,
+          "score": 47.60797022537856,
+          "title": "John DeLorean"
+        },
+        {
+          "rank": 3,
+          "score": 44.76227193921949,
+          "title": "Rocky Carroll"
+        },
+        {
+          "rank": 4,
+          "score": 44.74019004545242,
+          "title": "Jamie Lee Curtis"
+        },
+        {
+          "rank": 5,
+          "score": 42.13591255945796,
+          "title": "Seven dirty words"
+        },
+        {
+          "rank": 6,
+          "score": 39.77922816746063,
+          "title": "Madeleine Stowe"
+        },
+        {
+          "rank": 7,
+          "score": 36.66312467776318,
+          "title": "A Stop at Willoughby"
+        },
+        {
+          "rank": 8,
+          "score": 36.259419833563385,
+          "title": "Mark Hamill"
+        },
+        {
+          "rank": 9,
+          "score": 36.12375350251543,
+          "title": "Japanese television drama"
+        },
+        {
+          "rank": 10,
+          "score": 35.838753543777294,
+          "title": "Beefcake"
+        }
+      ]
+    },
+    {
+      "category": "AFRICAN CITIES",
+      "clue": "This port is the southernmost of South Africa's 3 capitals",
+      "aliases": [
+        "Cape Town"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 113.61432939593347,
+          "title": "History of South Africa"
+        },
+        {
+          "rank": 2,
+          "score": 112.46165410796006,
+          "title": "Union of South Africa"
+        },
+        {
+          "rank": 3,
+          "score": 109.38621829626086,
+          "title": "Demographics of South Africa"
+        },
+        {
+          "rank": 4,
+          "score": 109.05734847145281,
+          "title": "Geography of South Africa"
+        },
+        {
+          "rank": 5,
+          "score": 108.55459506755207,
+          "title": "Music of South Africa"
+        },
+        {
+          "rank": 6,
+          "score": 106.33651219022269,
+          "title": "Culture of South Africa"
+        },
+        {
+          "rank": 7,
+          "score": 105.24488551134577,
+          "title": "Television in South Africa"
+        },
+        {
+          "rank": 8,
+          "score": 105.03502024020607,
+          "title": "Immigration to South Africa"
+        },
+        {
+          "rank": 9,
+          "score": 104.83347900816494,
+          "title": "Flag of South Africa"
+        },
+        {
+          "rank": 10,
+          "score": 104.58316474987775,
+          "title": "National Library of South Africa"
+        }
+      ]
+    },
+    {
+      "category": "THE QUOTABLE KEATS",
+      "clue": "Keats was quoting this Edmund Spenser poem when he told Shelley to \"'load every rift' of your subject with ore\"",
+      "aliases": [
+        "The Faerie Queene"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 102.67893814488723,
+          "title": "The Faerie Queene"
+        },
+        {
+          "rank": 2,
+          "score": 103.10532349018628,
+          "title": "English poetry"
+        },
+        {
+          "rank": 3,
+          "score": 98.95701550285567,
+          "title": "Spenser (character)"
+        },
+        {
+          "rank": 4,
+          "score": 97.04678617049645,
+          "title": "John Keats"
+        },
+        {
+          "rank": 5,
+          "score": 94.23903489113839,
+          "title": "W. B. Yeats"
+        },
+        {
+          "rank": 6,
+          "score": 93.46609761124046,
+          "title": "John Milton"
+        },
+        {
+          "rank": 7,
+          "score": 83.19190968944568,
+          "title": "Piers Plowman"
+        },
+        {
+          "rank": 8,
+          "score": 81.78974695908673,
+          "title": "Oxfordian theory of Shakespeare authorship"
+        },
+        {
+          "rank": 9,
+          "score": 79.14895334841175,
+          "title": "Gabriel Harvey"
+        },
+        {
+          "rank": 10,
+          "score": 79.0575901661771,
+          "title": "George Crabbe"
+        }
+      ]
+    },
+    {
+      "category": "THE QUOTABLE KEATS",
+      "clue": "In an 1819 letter Keats wrote that this lord & poet \"cuts a figure, but he is not figurative\"",
+      "aliases": [
+        "Lord Byron"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 67.85646489528949,
+          "title": "Lord Byron"
+        },
+        {
+          "rank": 2,
+          "score": 84.66643670416006,
+          "title": "John Keats"
+        },
+        {
+          "rank": 3,
+          "score": 55.85217424980613,
+          "title": "Romanticism"
+        },
+        {
+          "rank": 4,
+          "score": 51.971967207082486,
+          "title": "Kubla Khan"
+        },
+        {
+          "rank": 5,
+          "score": 48.92787039372078,
+          "title": "Lord Alfred Douglas"
+        },
+        {
+          "rank": 6,
+          "score": 48.193026892698065,
+          "title": "Irish literature"
+        },
+        {
+          "rank": 7,
+          "score": 47.43975291273908,
+          "title": "Luis Cernuda"
+        },
+        {
+          "rank": 8,
+          "score": 47.29149582956398,
+          "title": "John Ruskin"
+        },
+        {
+          "rank": 9,
+          "score": 47.29104411917698,
+          "title": "Peterloo Massacre"
+        },
+        {
+          "rank": 10,
+          "score": 45.69606200108797,
+          "title": "Harold Stewart"
+        }
+      ]
+    },
+    {
+      "category": "GREEK FOOD & DRINK",
+      "clue": "This clear Greek liqueur is quite potent, so it's usually mixed with water, which turns it white & cloudy",
+      "aliases": [
+        "Ouzo"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 59.91338534071183,
+          "title": "Ouzo"
+        },
+        {
+          "rank": 2,
+          "score": 54.38785983016404,
+          "title": "Cider"
+        },
+        {
+          "rank": 3,
+          "score": 53.974129664534345,
+          "title": "Water vapor"
+        },
+        {
+          "rank": 4,
+          "score": 49.23717454928887,
+          "title": "English cuisine"
+        },
+        {
+          "rank": 5,
+          "score": 47.87091790625329,
+          "title": "Liquid crystal"
+        },
+        {
+          "rank": 6,
+          "score": 47.744944599310756,
+          "title": "Garlic"
+        },
+        {
+          "rank": 7,
+          "score": 47.620778056782214,
+          "title": "Cataract"
+        },
+        {
+          "rank": 8,
+          "score": 47.41853878185821,
+          "title": "Opium"
+        },
+        {
+          "rank": 9,
+          "score": 47.185649917956894,
+          "title": "Fennel"
+        },
+        {
+          "rank": 10,
+          "score": 46.95378520553623,
+          "title": "Alum"
+        }
+      ]
+    },
+    {
+      "category": "OLD YEAR'S RESOLUTIONS",
+      "clue": "Feb. 1, National Freedom Day, is the date in 1865 when a resolution sent the states an amendment ending this",
+      "aliases": [
+        "Slavery",
+        "Slavery in the United States"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 62.84522691639661,
+          "title": "Slavery in the United States"
+        },
+        {
+          "rank": 2,
+          "score": 66.18500675365372,
+          "title": "History of the United States (1865–1918)"
+        },
+        {
+          "rank": 3,
+          "score": 65.33555075524403,
+          "title": "Freedom of religion in the United States"
+        },
+        {
+          "rank": 4,
+          "score": 58.066370066193315,
+          "title": "Confederate States of America"
+        },
+        {
+          "rank": 5,
+          "score": 56.95632977018978,
+          "title": "History of the United States Navy"
+        },
+        {
+          "rank": 6,
+          "score": 54.890247730898594,
+          "title": "Federal Marriage Amendment"
+        },
+        {
+          "rank": 7,
+          "score": 53.40314344987061,
+          "title": "State of emergency"
+        },
+        {
+          "rank": 8,
+          "score": 53.30898611306647,
+          "title": "Thaddeus Stevens"
+        },
+        {
+          "rank": 9,
+          "score": 53.021497743244964,
+          "title": "History of the United States"
+        },
+        {
+          "rank": 10,
+          "score": 52.77126629898272,
+          "title": "Equal Rights Amendment"
+        }
+      ]
+    },
+    {
+      "category": "RANKS & TITLES",
+      "clue": "This person is the queen's representative in Canada; currently the office is held by David Johnston",
+      "aliases": [
+        "Governor General of Canada"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 101.20594898825222,
+          "title": "Governor General of Canada"
+        },
+        {
+          "rank": 2,
+          "score": 73.04295099461717,
+          "title": "Parliament of Canada"
+        },
+        {
+          "rank": 3,
+          "score": 66.11664727950004,
+          "title": "Order of Military Merit (Canada)"
+        },
+        {
+          "rank": 4,
+          "score": 61.49458205562186,
+          "title": "Lincoln Alexander"
+        },
+        {
+          "rank": 5,
+          "score": 56.475138695470264,
+          "title": "Jack Layton"
+        },
+        {
+          "rank": 6,
+          "score": 51.73018072211663,
+          "title": "David Duke"
+        },
+        {
+          "rank": 7,
+          "score": 49.61189414896396,
+          "title": "House of Commons of Canada"
+        },
+        {
+          "rank": 8,
+          "score": 49.44079438879328,
+          "title": "Canada–United States relations"
+        },
+        {
+          "rank": 9,
+          "score": 47.675290306167305,
+          "title": "Joseph E. Johnston"
+        },
+        {
+          "rank": 10,
+          "score": 47.65692159781699,
+          "title": "Oath of office"
+        }
+      ]
+    },
+    {
+      "category": "\"TIN\" MEN",
+      "clue": "He earned the \"fifth Beatle\" nickname by producing all of the Beatles' albums",
+      "aliases": [
+        "George Martin"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 98.33800189464094,
+          "title": "George Martin"
+        },
+        {
+          "rank": 2,
+          "score": 81.97740544209636,
+          "title": "Monty Python"
+        },
+        {
+          "rank": 3,
+          "score": 76.53050207462155,
+          "title": "Golden Earring"
+        },
+        {
+          "rank": 4,
+          "score": 72.67450309915742,
+          "title": "Radiohead"
+        },
+        {
+          "rank": 5,
+          "score": 61.6460475393922,
+          "title": "Apu Nahasapeemapetilon"
+        },
+        {
+          "rank": 6,
+          "score": 60.81110803739814,
+          "title": "The Beatles (album)"
+        },
+        {
+          "rank": 7,
+          "score": 59.17755769384536,
+          "title": "1 (The Beatles album)"
+        },
+        {
+          "rank": 8,
+          "score": 58.942127952691365,
+          "title": "Revolver (Beatles album)"
+        },
+        {
+          "rank": 9,
+          "score": 53.40525345288124,
+          "title": "Love (The Beatles album)"
+        },
+        {
+          "rank": 10,
+          "score": 51.86367652990663,
+          "title": "Ringo Starr"
+        }
+      ]
+    },
+    {
+      "category": "NEWSPAPERS",
+      "clue": "Early in their careers, Mark Twain & Bret Harte wrote pieces for this California city's Chronicle",
+      "aliases": [
+        "San Francisco"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 59.50971795236009,
+          "title": "California Gold Rush"
+        },
+        {
+          "rank": 2,
+          "score": 57.06611189374782,
+          "title": "Bret Harte Union High School"
+        },
+        {
+          "rank": 3,
+          "score": 56.806233542461214,
+          "title": "Kansas City Royals"
+        },
+        {
+          "rank": 4,
+          "score": 55.66462683345519,
+          "title": "Joaquin Miller"
+        },
+        {
+          "rank": 5,
+          "score": 53.87838813370957,
+          "title": "George Carlin"
+        },
+        {
+          "rank": 6,
+          "score": 51.61181099249947,
+          "title": "Dave Meltzer"
+        },
+        {
+          "rank": 7,
+          "score": 51.3786539128592,
+          "title": "Mark Hamill"
+        },
+        {
+          "rank": 8,
+          "score": 50.137268899699905,
+          "title": "Melissa Joan Hart"
+        },
+        {
+          "rank": 9,
+          "score": 49.75533254333384,
+          "title": "Mark McGwire"
+        },
+        {
+          "rank": 10,
+          "score": 49.4450809360391,
+          "title": "Henry Hart (musician)"
+        }
+      ]
+    },
+    {
+      "category": "POTPOURRI",
+      "clue": "Large specimens of this marsupial can leap over barriers 6 feet high",
+      "aliases": [
+        "Kangaroo"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 47.080835856726964,
+          "title": "Kangaroo"
+        },
+        {
+          "rank": 2,
+          "score": 46.96789569399577,
+          "title": "Fauna of Australia"
+        },
+        {
+          "rank": 3,
+          "score": 43.06013746612544,
+          "title": "Marsupial mole"
+        },
+        {
+          "rank": 4,
+          "score": 40.704272384503774,
+          "title": "Koala"
+        },
+        {
+          "rank": 5,
+          "score": 40.249975840191965,
+          "title": "Thames Barrier"
+        },
+        {
+          "rank": 6,
+          "score": 40.16530661494477,
+          "title": "Velociraptor"
+        },
+        {
+          "rank": 7,
+          "score": 39.130357784327735,
+          "title": "Kakapo"
+        },
+        {
+          "rank": 8,
+          "score": 38.8047783613835,
+          "title": "Israeli West Bank barrier"
+        },
+        {
+          "rank": 9,
+          "score": 37.48869217867006,
+          "title": "Adobe Creek (near Los Altos, California)"
+        },
+        {
+          "rank": 10,
+          "score": 35.26866388334111,
+          "title": "Emu"
+        }
+      ]
+    },
+    {
+      "category": "GREEK FOOD & DRINK",
+      "clue": "Because it's cured & stored in brine, this crumbly white cheese made from sheep's milk is often referred to as pickled cheese",
+      "aliases": [
+        "Feta"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 83.21171696991912,
+          "title": "Feta"
+        },
+        {
+          "rank": 2,
+          "score": 78.96079523246902,
+          "title": "Norwegian cuisine"
+        },
+        {
+          "rank": 3,
+          "score": 78.15972203194042,
+          "title": "English cuisine"
+        },
+        {
+          "rank": 4,
+          "score": 77.61499302553834,
+          "title": "Sausage"
+        },
+        {
+          "rank": 5,
+          "score": 75.5828182857001,
+          "title": "Sheep"
+        },
+        {
+          "rank": 6,
+          "score": 69.1048850117185,
+          "title": "Beef"
+        },
+        {
+          "rank": 7,
+          "score": 68.51223860290114,
+          "title": "Breakfast"
+        },
+        {
+          "rank": 8,
+          "score": 66.21569926883424,
+          "title": "Head cheese"
+        },
+        {
+          "rank": 9,
+          "score": 65.77252934663792,
+          "title": "Wensleydale cheese"
+        },
+        {
+          "rank": 10,
+          "score": 65.54180867113328,
+          "title": "Kashrut"
+        }
+      ]
+    },
+    {
+      "category": "1920s NEWS FLASH!",
+      "clue": "1927! Gene Tunney takes a long count in the squared circle but rises to defeat this \"Manassa Mauler\"! Howzabout that!",
+      "aliases": [
+        "Jack Dempsey"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 252.99731703661345,
+          "title": "Jack Dempsey"
+        },
+        {
+          "rank": 2,
+          "score": 103.04599550835273,
+          "title": "Max Schmeling"
+        },
+        {
+          "rank": 3,
+          "score": 71.82358166985614,
+          "title": "Tommy Gibbons"
+        },
+        {
+          "rank": 4,
+          "score": 54.199184936994115,
+          "title": "Willie \"The Lion\" Smith"
+        },
+        {
+          "rank": 5,
+          "score": 52.55361520166157,
+          "title": "Lou Stillman"
+        },
+        {
+          "rank": 6,
+          "score": 48.7094449554621,
+          "title": "MIM-46 Mauler"
+        },
+        {
+          "rank": 7,
+          "score": 43.58282472052679,
+          "title": "Robert Edward Crozier Long"
+        },
+        {
+          "rank": 8,
+          "score": 42.96893541855384,
+          "title": "Byrds (album)"
+        },
+        {
+          "rank": 9,
+          "score": 41.29547650404514,
+          "title": "Confederate States of America"
+        },
+        {
+          "rank": 10,
+          "score": 41.258378887221376,
+          "title": "Tiananmen Square protests of 1989"
+        }
+      ]
+    },
+    {
+      "category": "RANKS & TITLES",
+      "clue": "Italian for \"leader\", it was especially applied to Benito Mussolini",
+      "aliases": [
+        "Duce"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 101.0605969418856,
+          "title": "Duce"
+        },
+        {
+          "rank": 2,
+          "score": 111.67779857102852,
+          "title": "Alessandra Mussolini"
+        },
+        {
+          "rank": 3,
+          "score": 103.62300459750104,
+          "title": "Romano Mussolini"
+        },
+        {
+          "rank": 4,
+          "score": 98.93656788507765,
+          "title": "Italian Empire"
+        },
+        {
+          "rank": 5,
+          "score": 97.46053165832376,
+          "title": "Fascism in Europe"
+        },
+        {
+          "rank": 6,
+          "score": 96.07405714779519,
+          "title": "Italian constitutional referendum, 1946"
+        },
+        {
+          "rank": 7,
+          "score": 93.89231339605027,
+          "title": "History of Albania"
+        },
+        {
+          "rank": 8,
+          "score": 86.61666682160056,
+          "title": "Italian neorealism"
+        },
+        {
+          "rank": 9,
+          "score": 84.65835929050841,
+          "title": "League of Nations"
+        },
+        {
+          "rank": 10,
+          "score": 84.63764625506263,
+          "title": "History of Italy"
+        }
+      ]
+    },
+    {
+      "category": "STATE OF THE ART MUSEUM (Alex: We'll give you the museum. You give us the state.)",
+      "clue": "The Kalamazoo Institute of Arts",
+      "aliases": [
+        "Michigan"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 33.22289055330946,
+          "title": "Kalamazoo/Battle Creek International Airport"
+        },
+        {
+          "rank": 2,
+          "score": 33.80167069993856,
+          "title": "San Francisco Art Institute"
+        },
+        {
+          "rank": 3,
+          "score": 33.44751059513375,
+          "title": "Liverpool Institute for Performing Arts"
+        },
+        {
+          "rank": 4,
+          "score": 31.988190728746947,
+          "title": "Kalamazoo Kings"
+        },
+        {
+          "rank": 5,
+          "score": 30.04794944579361,
+          "title": "Portland Institute for Contemporary Art"
+        },
+        {
+          "rank": 6,
+          "score": 29.6248587091713,
+          "title": "Institute of Contemporary Arts Singapore"
+        },
+        {
+          "rank": 7,
+          "score": 27.822643191363962,
+          "title": "Kalamazoo Kangaroos"
+        },
+        {
+          "rank": 8,
+          "score": 23.614297061311106,
+          "title": "Contemporary art"
+        },
+        {
+          "rank": 9,
+          "score": 23.557209120950397,
+          "title": "Chautauqua Institution"
+        },
+        {
+          "rank": 10,
+          "score": 23.48119108525408,
+          "title": "Ricardo Brennand Institute"
+        }
+      ]
+    },
+    {
+      "category": "STATE OF THE ART MUSEUM (Alex: We'll give you the museum. You give us the state.)",
+      "clue": "The Sun Valley Center for the Arts",
+      "aliases": [
+        "Idaho"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 38.158567115206566,
+          "title": "Sun Valley High School (North Carolina)"
+        },
+        {
+          "rank": 2,
+          "score": 36.751924739044696,
+          "title": "Sun-Maid"
+        },
+        {
+          "rank": 3,
+          "score": 36.62139872119225,
+          "title": "The Outlaw Josey Wales"
+        },
+        {
+          "rank": 4,
+          "score": 34.635295475652555,
+          "title": "Hackensack University Medical Center at Pascack Valley"
+        },
+        {
+          "rank": 5,
+          "score": 34.27649042781335,
+          "title": "Sun City Center, Florida"
+        },
+        {
+          "rank": 6,
+          "score": 33.89972918994693,
+          "title": "Walker Art Center"
+        },
+        {
+          "rank": 7,
+          "score": 33.54782953430589,
+          "title": "The Center for Arts Education"
+        },
+        {
+          "rank": 8,
+          "score": 33.38454423939556,
+          "title": "River Valley Technical Center"
+        },
+        {
+          "rank": 9,
+          "score": 33.19250276273762,
+          "title": "Carver Center for Arts and Technology"
+        },
+        {
+          "rank": 10,
+          "score": 32.874794844740954,
+          "title": "Collins Center for the Arts"
+        }
+      ]
+    },
+    {
+      "category": "\"TIN\" MEN",
+      "clue": "You can't mention this shortstop without mentioning his double-play associates Evers & Chance",
+      "aliases": [
+        "Joe Tinker"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 80.98572223684829,
+          "title": "Joe Tinker"
+        },
+        {
+          "rank": 2,
+          "score": 74.76896598108925,
+          "title": "Chicago Cubs"
+        },
+        {
+          "rank": 3,
+          "score": 60.7820003494053,
+          "title": "Hughie Jennings"
+        },
+        {
+          "rank": 4,
+          "score": 53.485540363435845,
+          "title": "Double (association football)"
+        },
+        {
+          "rank": 5,
+          "score": 49.883745106208615,
+          "title": "Triple play"
+        },
+        {
+          "rank": 6,
+          "score": 46.71388556280441,
+          "title": "Moe Berg"
+        },
+        {
+          "rank": 7,
+          "score": 43.63182753638575,
+          "title": "Honus Wagner"
+        },
+        {
+          "rank": 8,
+          "score": 43.60924094035846,
+          "title": "Derek Jeter"
+        },
+        {
+          "rank": 9,
+          "score": 43.049522177372495,
+          "title": "Cincinnati Reds"
+        },
+        {
+          "rank": 10,
+          "score": 41.70880231285449,
+          "title": "Saint-Gaudens double eagle"
+        }
+      ]
+    },
+    {
+      "category": "NEWSPAPERS",
+      "clue": "In 1840 Horace Greeley began publishing \"The Log Cabin\", a weekly campaign paper in support of this Whig candidate",
+      "aliases": [
+        "William Henry Harrison"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 146.4881264612057,
+          "title": "William Henry Harrison"
+        },
+        {
+          "rank": 2,
+          "score": 293.8800830472351,
+          "title": "Patrick Robert Sydnor Log Cabin"
+        },
+        {
+          "rank": 3,
+          "score": 137.06750844162707,
+          "title": "National Park Service rustic"
+        },
+        {
+          "rank": 4,
+          "score": 132.77361611629124,
+          "title": "George Washington's Headquarters (Cumberland, Maryland)"
+        },
+        {
+          "rank": 5,
+          "score": 120.87462177334922,
+          "title": "Lincoln's New Salem"
+        },
+        {
+          "rank": 6,
+          "score": 118.58301789379546,
+          "title": "Johnson County War"
+        },
+        {
+          "rank": 7,
+          "score": 115.66566839679984,
+          "title": "Julius Blackburn House"
+        },
+        {
+          "rank": 8,
+          "score": 112.23666718770828,
+          "title": "New Sweden"
+        },
+        {
+          "rank": 9,
+          "score": 107.77717711035868,
+          "title": "Austin Blair"
+        },
+        {
+          "rank": 10,
+          "score": 105.19213693067513,
+          "title": "Libertarian perspectives on LGBT rights"
+        }
+      ]
+    },
+    {
+      "category": "I'M BURNIN' FOR YOU",
+      "clue": "Pierre Cauchon, Bishop of Beauvais, presided over the trial of this woman who went up in smoke May 30, 1431",
+      "aliases": [
+        "Joan of Arc",
+        "Jeanne d'Arc"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 140.3394876346346,
+          "title": "Joan of Arc"
+        },
+        {
+          "rank": 2,
+          "score": 98.88183075511562,
+          "title": "Medieval Inquisition"
+        },
+        {
+          "rank": 3,
+          "score": 96.87326999735122,
+          "title": "Roman Catholic Diocese of Beauvais"
+        },
+        {
+          "rank": 4,
+          "score": 51.30529691050121,
+          "title": "Napoleon III"
+        },
+        {
+          "rank": 5,
+          "score": 48.38111295415412,
+          "title": "Trial by ordeal"
+        },
+        {
+          "rank": 6,
+          "score": 48.32583503367202,
+          "title": "Mount Pelée"
+        },
+        {
+          "rank": 7,
+          "score": 48.1695812474772,
+          "title": "Fidel Castro"
+        },
+        {
+          "rank": 8,
+          "score": 47.85581655765708,
+          "title": "R101"
+        },
+        {
+          "rank": 9,
+          "score": 46.93380388346251,
+          "title": "François Mitterrand"
+        },
+        {
+          "rank": 10,
+          "score": 46.84844826212036,
+          "title": "Paris Commune"
+        }
+      ]
+    },
+    {
+      "category": "COMPLETE DOM-INATION(Alex: Not \"domination.\")",
+      "clue": "This Wisconsin city claims to have built the USA's only granite dome",
+      "aliases": [
+        "Madison"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 50.92346119251544,
+          "title": "Madison, Wisconsin"
+        },
+        {
+          "rank": 2,
+          "score": 45.35391021097213,
+          "title": "Granite City, British Columbia"
+        },
+        {
+          "rank": 3,
+          "score": 42.524604672282074,
+          "title": "Socialist Party USA"
+        },
+        {
+          "rank": 4,
+          "score": 40.00708566262442,
+          "title": "Dome of the Rock"
+        },
+        {
+          "rank": 5,
+          "score": 38.700695893952286,
+          "title": "Wisconsin Dells, Wisconsin"
+        },
+        {
+          "rank": 6,
+          "score": 38.415060828151375,
+          "title": "Des Moines, Iowa"
+        },
+        {
+          "rank": 7,
+          "score": 36.47659709638539,
+          "title": "Yosemite Valley"
+        },
+        {
+          "rank": 8,
+          "score": 35.12912497229583,
+          "title": "Maharishi University of Management"
+        },
+        {
+          "rank": 9,
+          "score": 34.61461871516236,
+          "title": "New York City Hall"
+        },
+        {
+          "rank": 10,
+          "score": 34.197121792945936,
+          "title": "Georgia (U.S. state)"
+        }
+      ]
+    },
+    {
+      "category": "NEWSPAPERS",
+      "clue": "This Georgia paper is known as the AJC for short",
+      "aliases": [
+        "The Atlanta Journal-Constitution"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 39.803498733352754,
+          "title": "The Atlanta Journal-Constitution"
+        },
+        {
+          "rank": 2,
+          "score": 32.302653774685915,
+          "title": "Augusta, Georgia"
+        },
+        {
+          "rank": 3,
+          "score": 30.20225520978475,
+          "title": "Georgia (U.S. state)"
+        },
+        {
+          "rank": 4,
+          "score": 29.031911848422453,
+          "title": "History of Augusta, Georgia"
+        },
+        {
+          "rank": 5,
+          "score": 28.632679818256413,
+          "title": "Georgia Southern Eagles"
+        },
+        {
+          "rank": 6,
+          "score": 28.533711256051888,
+          "title": "George Mathews (Georgia)"
+        },
+        {
+          "rank": 7,
+          "score": 27.902326123468026,
+          "title": "U.S. Route 25 in Georgia"
+        },
+        {
+          "rank": 8,
+          "score": 26.968786968081567,
+          "title": "U.S. Route 82 in Georgia"
+        },
+        {
+          "rank": 9,
+          "score": 26.912622585463176,
+          "title": "Georgia (country)"
+        },
+        {
+          "rank": 10,
+          "score": 26.64822364516266,
+          "title": "Central State Hospital (Milledgeville, Georgia)"
+        }
+      ]
+    },
+    {
+      "category": "AFRICAN CITIES",
+      "clue": "Wooden 2-story verandas in this Liberian capital are an architectural link to the U.S. south",
+      "aliases": [
+        "Monrovia"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 36.63087006345459,
+          "title": "Monrovia"
+        },
+        {
+          "rank": 2,
+          "score": 51.828978746305026,
+          "title": "Architecture of India"
+        },
+        {
+          "rank": 3,
+          "score": 48.823773608418335,
+          "title": "Americo-Liberian"
+        },
+        {
+          "rank": 4,
+          "score": 41.35537312111747,
+          "title": "Islamic architecture"
+        },
+        {
+          "rank": 5,
+          "score": 39.82777938346572,
+          "title": "Columbia, South Carolina"
+        },
+        {
+          "rank": 6,
+          "score": 38.97450937995679,
+          "title": "South Korea"
+        },
+        {
+          "rank": 7,
+          "score": 38.55891445005851,
+          "title": "Glenview Mansion"
+        },
+        {
+          "rank": 8,
+          "score": 38.52901246821644,
+          "title": "Ellwood House"
+        },
+        {
+          "rank": 9,
+          "score": 37.621915016607886,
+          "title": "Khmer architecture"
+        },
+        {
+          "rank": 10,
+          "score": 37.39802453614723,
+          "title": "Architecture of St. Louis"
+        }
+      ]
+    },
+    {
+      "category": "COMPLETE DOM-INATION(Alex: Not \"domination.\")",
+      "clue": "This New Orleans venue reopened Sept. 25, 2006",
+      "aliases": [
+        "Mercedes-Benz Superdome",
+        "The Superdome"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 122.27538224749198,
+          "title": "New Orleans Saints"
+        },
+        {
+          "rank": 2,
+          "score": 131.78122704456985,
+          "title": "Louis Armstrong New Orleans International Airport"
+        },
+        {
+          "rank": 3,
+          "score": 120.67217873941331,
+          "title": "Saenger Theatre (New Orleans, Louisiana)"
+        },
+        {
+          "rank": 4,
+          "score": 118.07786142425473,
+          "title": "History of the New Orleans Pelicans"
+        },
+        {
+          "rank": 5,
+          "score": 115.42934766190018,
+          "title": "New Orleans Jazz Museum"
+        },
+        {
+          "rank": 6,
+          "score": 114.77375005891551,
+          "title": "Battle of New Orleans"
+        },
+        {
+          "rank": 7,
+          "score": 113.20380123218823,
+          "title": "Children's Hospital of New Orleans"
+        },
+        {
+          "rank": 8,
+          "score": 113.00620867175606,
+          "title": "New Orleans Rhythm Kings"
+        },
+        {
+          "rank": 9,
+          "score": 112.18044408020735,
+          "title": "New Orleans (steamboat)"
+        },
+        {
+          "rank": 10,
+          "score": 109.26797302840124,
+          "title": "Green Light New Orleans"
+        }
+      ]
+    },
+    {
+      "category": "HE PLAYED A GUY NAMED JACK RYAN IN...",
+      "clue": "\"The Hunt for Red October\"; he went more comedic as Jack Donaghy on \"30 Rock\"",
+      "aliases": [
+        "Alec Baldwin"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 195.39153950325067,
+          "title": "Alec Baldwin"
+        },
+        {
+          "rank": 2,
+          "score": 218.04874705395198,
+          "title": "30 Rock (season 6)"
+        },
+        {
+          "rank": 3,
+          "score": 109.54549154223076,
+          "title": "Boulder International Film Festival"
+        },
+        {
+          "rank": 4,
+          "score": 90.53136590731583,
+          "title": "Sean Connery"
+        },
+        {
+          "rank": 5,
+          "score": 89.01657309810709,
+          "title": "Adriane Lenox"
+        },
+        {
+          "rank": 6,
+          "score": 88.72433921364203,
+          "title": "William Baldwin"
+        },
+        {
+          "rank": 7,
+          "score": 87.044261663921,
+          "title": "Malice (film)"
+        },
+        {
+          "rank": 8,
+          "score": 85.78563075519388,
+          "title": "USS Dallas (SSN-700)"
+        },
+        {
+          "rank": 9,
+          "score": 85.53433639842177,
+          "title": "HMS Sceptre (S104)"
+        },
+        {
+          "rank": 10,
+          "score": 80.50467702425095,
+          "title": "Condoleezza Rice"
+        }
+      ]
+    },
+    {
+      "category": "AFRICAN-AMERICAN WOMEN",
+      "clue": "Rita Dove titled a collection of poems \"On the Bus with\" this woman",
+      "aliases": [
+        "Rosa Parks"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 98.45629607692202,
+          "title": "Chinatown bus lines"
+        },
+        {
+          "rank": 2,
+          "score": 93.50082467508923,
+          "title": "Bu Zhi"
+        },
+        {
+          "rank": 3,
+          "score": 92.82169184542342,
+          "title": "Public transport bus service"
+        },
+        {
+          "rank": 4,
+          "score": 91.7685929017071,
+          "title": "North American Bus Industries"
+        },
+        {
+          "rank": 5,
+          "score": 91.46969791321658,
+          "title": "Bus (computing)"
+        },
+        {
+          "rank": 6,
+          "score": 90.33980546555674,
+          "title": "S-Bus"
+        },
+        {
+          "rank": 7,
+          "score": 90.28574988214964,
+          "title": "MTA Regional Bus Operations"
+        },
+        {
+          "rank": 8,
+          "score": 89.95331751130897,
+          "title": "Front-side bus"
+        },
+        {
+          "rank": 9,
+          "score": 89.10664551367393,
+          "title": "Bus advertising"
+        },
+        {
+          "rank": 10,
+          "score": 89.07159228091017,
+          "title": "Bus error"
+        }
+      ]
+    },
+    {
+      "category": "HE PLAYED A GUY NAMED JACK RYAN IN...",
+      "clue": "\"Patriot Games\"; he's had other iconic roles, in space & underground",
+      "aliases": [
+        "Harrison Ford"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 93.133761143407,
+          "title": "Harrison Ford"
+        },
+        {
+          "rank": 2,
+          "score": 125.36953139050277,
+          "title": "Somerset Patriots"
+        },
+        {
+          "rank": 3,
+          "score": 114.48668948696637,
+          "title": "2008 New York Jets season"
+        },
+        {
+          "rank": 4,
+          "score": 83.46872814917043,
+          "title": "Bob Costas"
+        },
+        {
+          "rank": 5,
+          "score": 82.93974386740982,
+          "title": "James Earl Jones"
+        },
+        {
+          "rank": 6,
+          "score": 81.66975280760974,
+          "title": "Gayane (ballet)"
+        },
+        {
+          "rank": 7,
+          "score": 80.09384905918023,
+          "title": "Thora Birch"
+        },
+        {
+          "rank": 8,
+          "score": 70.88055155324233,
+          "title": "Wojciech Kilar"
+        },
+        {
+          "rank": 9,
+          "score": 63.987681142824506,
+          "title": "Racism in early American film"
+        },
+        {
+          "rank": 10,
+          "score": 56.25255503027772,
+          "title": "Prince Philip, Duke of Edinburgh"
+        }
+      ]
+    },
+    {
+      "category": "COMPLETE DOM-INATION(Alex: Not \"domination.\")",
+      "clue": "This sacred structure dates from the late 600's A.D.",
+      "aliases": [
+        "Dome of the Rock"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 38.005446803942796,
+          "title": "Sacred prostitution"
+        },
+        {
+          "rank": 2,
+          "score": 35.152217574675404,
+          "title": "Altun Ha"
+        },
+        {
+          "rank": 3,
+          "score": 33.46579008171602,
+          "title": "Dating creation"
+        },
+        {
+          "rank": 4,
+          "score": 32.08097988933066,
+          "title": "Tayasal (archaeological site)"
+        },
+        {
+          "rank": 5,
+          "score": 31.982584196205078,
+          "title": "Radiocarbon dating"
+        },
+        {
+          "rank": 6,
+          "score": 31.150010791180044,
+          "title": "Chaos A.D."
+        },
+        {
+          "rank": 7,
+          "score": 30.237147320260824,
+          "title": "Chichen Itza"
+        },
+        {
+          "rank": 8,
+          "score": 30.198021364644493,
+          "title": "Sacred Heart Catholic Church (McCartyville, Ohio)"
+        },
+        {
+          "rank": 9,
+          "score": 30.067991366615065,
+          "title": "Roman Empire"
+        },
+        {
+          "rank": 10,
+          "score": 29.610816193032182,
+          "title": "Izamal"
+        }
+      ]
+    },
+    {
+      "category": "'80s NO.1 HITMAKERS",
+      "clue": "1988: \"Man In The Mirror\"",
+      "aliases": [
+        "Michael Jackson"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 45.29482619810392,
+          "title": "Michael Jackson"
+        },
+        {
+          "rank": 2,
+          "score": 38.4583078588373,
+          "title": "John Howard Griffin"
+        },
+        {
+          "rank": 3,
+          "score": 37.78765030421083,
+          "title": "Luther Vandross"
+        },
+        {
+          "rank": 4,
+          "score": 34.583177986984445,
+          "title": "Francis Saltus Saltus"
+        },
+        {
+          "rank": 5,
+          "score": 27.242789552381552,
+          "title": "Mirror Image (The Twilight Zone)"
+        },
+        {
+          "rank": 6,
+          "score": 26.611106134643563,
+          "title": "Mirror Mirror (Dardanelles album)"
+        },
+        {
+          "rank": 7,
+          "score": 25.248553324083232,
+          "title": "The Mirror Crack'd from Side to Side"
+        },
+        {
+          "rank": 8,
+          "score": 24.742047605169013,
+          "title": "Mirror image"
+        },
+        {
+          "rank": 9,
+          "score": 24.344115062913865,
+          "title": "The Man with the Golden Gun (film)"
+        },
+        {
+          "rank": 10,
+          "score": 24.229643964278093,
+          "title": "Kirby & the Amazing Mirror"
+        }
+      ]
+    },
+    {
+      "category": "CAPITAL CITY CHURCHES (Alex: We'll give you the church. You tell us the capital city in which it is located.)",
+      "clue": "Matthias Church, or Matyas Templom, where Franz Joseph was crowned in 1867",
+      "aliases": [
+        "Budapest"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 69.59506855397254,
+          "title": "Budapest"
+        },
+        {
+          "rank": 2,
+          "score": 107.24314143314895,
+          "title": "Franz Liszt"
+        },
+        {
+          "rank": 3,
+          "score": 91.85370790146355,
+          "title": "History of Buda Castle"
+        },
+        {
+          "rank": 4,
+          "score": 85.11415285084242,
+          "title": "Franz Schubert"
+        },
+        {
+          "rank": 5,
+          "score": 82.40410623567556,
+          "title": "Votive Church, Vienna"
+        },
+        {
+          "rank": 6,
+          "score": 75.6680771185642,
+          "title": "Hungary"
+        },
+        {
+          "rank": 7,
+          "score": 74.01410252619073,
+          "title": "Joseph Haydn"
+        },
+        {
+          "rank": 8,
+          "score": 67.37055800428615,
+          "title": "Hungarian Defence Force"
+        },
+        {
+          "rank": 9,
+          "score": 66.5041228594031,
+          "title": "Charles-Joseph, 7th Prince of Ligne"
+        },
+        {
+          "rank": 10,
+          "score": 64.51191437830909,
+          "title": "Joseph Beuys"
+        }
+      ]
+    },
+    {
+      "category": "UCLA CELEBRITY ALUMNI",
+      "clue": "Attending UCLA in the '60s, he was no \"Meathead\", he just played one later on television",
+      "aliases": [
+        "Rob Reiner"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 73.97626582945912,
+          "title": "Harry Shearer"
+        },
+        {
+          "rank": 2,
+          "score": 96.00440310485283,
+          "title": "Kareem Abdul-Jabbar"
+        },
+        {
+          "rank": 3,
+          "score": 90.60346694853948,
+          "title": "University of California, Los Angeles"
+        },
+        {
+          "rank": 4,
+          "score": 62.08931411734255,
+          "title": "James Robert Baker"
+        },
+        {
+          "rank": 5,
+          "score": 59.55999575664756,
+          "title": "Mayim Bialik"
+        },
+        {
+          "rank": 6,
+          "score": 56.54460844558812,
+          "title": "Susan Egan"
+        },
+        {
+          "rank": 7,
+          "score": 56.531717778009536,
+          "title": "Alison Sweeney"
+        },
+        {
+          "rank": 8,
+          "score": 56.285265295758705,
+          "title": "Peter Carlisle"
+        },
+        {
+          "rank": 9,
+          "score": 55.310754716750246,
+          "title": "Nicolas Cage"
+        },
+        {
+          "rank": 10,
+          "score": 53.972442884191736,
+          "title": "Dawn Harper"
+        }
+      ]
+    },
+    {
+      "category": "THE RESIDENTS",
+      "clue": "Kinch, Carter & LeBeau were all residents of Stalag 13 on this TV show",
+      "aliases": [
+        "Hogan's Heroes"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 94.84196700174914,
+          "title": "Hogan's Heroes"
+        },
+        {
+          "rank": 2,
+          "score": 51.649817069497956,
+          "title": "John Carter (ER)"
+        },
+        {
+          "rank": 3,
+          "score": 47.5372000026514,
+          "title": "Get Carter"
+        },
+        {
+          "rank": 4,
+          "score": 41.165381167204856,
+          "title": "Nell Carter"
+        },
+        {
+          "rank": 5,
+          "score": 40.75349519286084,
+          "title": "Lin Carter"
+        },
+        {
+          "rank": 6,
+          "score": 39.87011849096981,
+          "title": "Carter the Unstoppable Sex Machine"
+        },
+        {
+          "rank": 7,
+          "score": 39.56838470237442,
+          "title": "Max Headroom (TV series)"
+        },
+        {
+          "rank": 8,
+          "score": 38.24881882072552,
+          "title": "Scottsboro Boys"
+        },
+        {
+          "rank": 9,
+          "score": 38.055637856628415,
+          "title": "The Ren & Stimpy Show"
+        },
+        {
+          "rank": 10,
+          "score": 37.66494394142742,
+          "title": "Stalag VIII-F"
+        }
+      ]
+    },
+    {
+      "category": "1920s NEWS FLASH!",
+      "clue": "News flash! This less-than-yappy pappy is sixth veep to be nation's top dog after chief takes deep sleep!",
+      "aliases": [
+        "Calvin Coolidge"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 56.10164151289071,
+          "title": "Iditarod Trail Sled Dog Race"
+        },
+        {
+          "rank": 2,
+          "score": 55.40702505715984,
+          "title": "Sleep deprivation"
+        },
+        {
+          "rank": 3,
+          "score": 54.15008374986208,
+          "title": "Brotherhood of Sleeping Car Porters"
+        },
+        {
+          "rank": 4,
+          "score": 52.936171257830914,
+          "title": "Deep Purple"
+        },
+        {
+          "rank": 5,
+          "score": 52.10518511421813,
+          "title": "Lion"
+        },
+        {
+          "rank": 6,
+          "score": 51.626704537368916,
+          "title": "Air National Guard"
+        },
+        {
+          "rank": 7,
+          "score": 51.183604242484975,
+          "title": "Māori culture"
+        },
+        {
+          "rank": 8,
+          "score": 50.94165011301209,
+          "title": "National Ignition Facility"
+        },
+        {
+          "rank": 9,
+          "score": 50.212995751574844,
+          "title": "Yellowstone National Park"
+        },
+        {
+          "rank": 10,
+          "score": 50.090637309228796,
+          "title": "Flash memory"
+        }
+      ]
+    },
+    {
+      "category": "GOLDEN GLOBE WINNERS",
+      "clue": "In 2001: The president of the United States on television",
+      "aliases": [
+        "Martin Sheen"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 101.38292019687607,
+          "title": "George W. Bush's first term as President of the United States"
+        },
+        {
+          "rank": 2,
+          "score": 95.56306673001617,
+          "title": "Vice President of the United States"
+        },
+        {
+          "rank": 3,
+          "score": 95.13211960825063,
+          "title": "George W. Bush's second term as President of the United States"
+        },
+        {
+          "rank": 4,
+          "score": 94.5170774135623,
+          "title": "President pro tempore of the United States Senate"
+        },
+        {
+          "rank": 5,
+          "score": 92.7567301352449,
+          "title": "Executive Office of the President of the United States"
+        },
+        {
+          "rank": 6,
+          "score": 92.1661496288035,
+          "title": "Powers of the President of the United States"
+        },
+        {
+          "rank": 7,
+          "score": 88.52474365067812,
+          "title": "1986 United States bombing of Libya"
+        },
+        {
+          "rank": 8,
+          "score": 88.35411238629791,
+          "title": "The Presidents of the United States of America (album)"
+        },
+        {
+          "rank": 9,
+          "score": 88.02173107910629,
+          "title": "United States and the United Nations"
+        },
+        {
+          "rank": 10,
+          "score": 87.16778058747941,
+          "title": "Canada–United States relations"
+        }
+      ]
+    },
+    {
+      "category": "'80s NO.1 HITMAKERS",
+      "clue": "1989: \"Miss You Much\"",
+      "aliases": [
+        "Janet Jackson"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 48.973309318182736,
+          "title": "Janet Jackson"
+        },
+        {
+          "rank": 2,
+          "score": 46.2608136482576,
+          "title": "Theoren Fleury"
+        },
+        {
+          "rank": 3,
+          "score": 43.259855120235045,
+          "title": "Wayne Carey"
+        },
+        {
+          "rank": 4,
+          "score": 43.1271540517885,
+          "title": "Cleveland Browns"
+        },
+        {
+          "rank": 5,
+          "score": 41.55210405928001,
+          "title": "Seamus Heaney"
+        },
+        {
+          "rank": 6,
+          "score": 41.23618090334924,
+          "title": "Read-copy-update"
+        },
+        {
+          "rank": 7,
+          "score": 38.80745411366442,
+          "title": "House of Romanov"
+        },
+        {
+          "rank": 8,
+          "score": 37.93418717873648,
+          "title": "Bo Jackson"
+        },
+        {
+          "rank": 9,
+          "score": 37.91902045173559,
+          "title": "Brandi Chastain"
+        },
+        {
+          "rank": 10,
+          "score": 35.34079747626697,
+          "title": "John Michael Hayes"
+        }
+      ]
+    },
+    {
+      "category": "1920s NEWS FLASH!",
+      "clue": "1922: It's the end of an empire! This empire, in fact! After 600 years, it's goodbye, this, hello, Turkish Republic!",
+      "aliases": [
+        "Ottoman Empire"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 77.06650427062397,
+          "title": "History of the Republic of Turkey"
+        },
+        {
+          "rank": 2,
+          "score": 85.0303350584911,
+          "title": "Cyprus dispute"
+        },
+        {
+          "rank": 3,
+          "score": 80.8604451732989,
+          "title": "Cyprus"
+        },
+        {
+          "rank": 4,
+          "score": 76.32167838965066,
+          "title": "Aftermath of World War I"
+        },
+        {
+          "rank": 5,
+          "score": 75.35712075410376,
+          "title": "Kurdish people"
+        },
+        {
+          "rank": 6,
+          "score": 74.12258016636332,
+          "title": "Lycia"
+        },
+        {
+          "rank": 7,
+          "score": 74.06282032701554,
+          "title": "İsmet İnönü"
+        },
+        {
+          "rank": 8,
+          "score": 72.57138635489035,
+          "title": "Historical revisionism (negationism)"
+        },
+        {
+          "rank": 9,
+          "score": 71.84286020861362,
+          "title": "Turkish Canadian"
+        },
+        {
+          "rank": 10,
+          "score": 68.91868567364324,
+          "title": "Northern Cyprus"
+        }
+      ]
+    },
+    {
+      "category": "NAME THE PARENT COMPANY",
+      "clue": "Crest toothpaste",
+      "aliases": [
+        "Procter & Gamble"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 21.57520567503,
+          "title": "Procter & Gamble"
+        },
+        {
+          "rank": 2,
+          "score": 26.938360400136197,
+          "title": "Crested Shelduck"
+        },
+        {
+          "rank": 3,
+          "score": 26.622624112865438,
+          "title": "Crest Capital"
+        },
+        {
+          "rank": 4,
+          "score": 26.560497142218672,
+          "title": "Crest of the Stars"
+        },
+        {
+          "rank": 5,
+          "score": 26.2147098507592,
+          "title": "Eastern black crested gibbon"
+        },
+        {
+          "rank": 6,
+          "score": 25.761062906837772,
+          "title": "Lesser Crested Tern"
+        },
+        {
+          "rank": 7,
+          "score": 24.722225727175953,
+          "title": "European Crested Tit"
+        },
+        {
+          "rank": 8,
+          "score": 24.059803849009782,
+          "title": "Black-crested Bulbul"
+        },
+        {
+          "rank": 9,
+          "score": 23.814907069302784,
+          "title": "Cedar Crest (Faunsdale, Alabama)"
+        },
+        {
+          "rank": 10,
+          "score": 22.698384506185423,
+          "title": "Fern Crest Village, Florida"
+        }
+      ]
+    },
+    {
+      "category": "HISTORICAL QUOTES",
+      "clue": "In 1888 this Chancellor told the Reichstag, \"we Germans fear God, but nothing else in the world\"",
+      "aliases": [
+        "Otto von Bismarck",
+        "Von Bismarck"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 60.073828743929205,
+          "title": "Otto von Bismarck"
+        },
+        {
+          "rank": 2,
+          "score": 77.58617770466974,
+          "title": "Wilhelm II, German Emperor"
+        },
+        {
+          "rank": 3,
+          "score": 62.92465895050673,
+          "title": "Imperial German Navy"
+        },
+        {
+          "rank": 4,
+          "score": 57.78336326374449,
+          "title": "Joseph Chamberlain"
+        },
+        {
+          "rank": 5,
+          "score": 56.59222532564437,
+          "title": "Hermann Göring"
+        },
+        {
+          "rank": 6,
+          "score": 54.4462000606141,
+          "title": "Reichstag Fire Decree"
+        },
+        {
+          "rank": 7,
+          "score": 53.17368559877936,
+          "title": "Fear and Trembling"
+        },
+        {
+          "rank": 8,
+          "score": 51.49306496129397,
+          "title": "Konrad Adenauer"
+        },
+        {
+          "rank": 9,
+          "score": 50.815212442733966,
+          "title": "Joachim von Ribbentrop"
+        },
+        {
+          "rank": 10,
+          "score": 50.16571059171154,
+          "title": "Neville Chamberlain"
+        }
+      ]
+    },
+    {
+      "category": "POETS & POETRY",
+      "clue": "In 1787 he signed his first published poem \"Axiologus\"; axio- is from the Greek for \"worth\"",
+      "aliases": [
+        "William Wordsworth"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 51.414453671852065,
+          "title": "Axios (acclamation)"
+        },
+        {
+          "rank": 2,
+          "score": 45.62837611811215,
+          "title": "Lord Byron"
+        },
+        {
+          "rank": 3,
+          "score": 43.36430938612452,
+          "title": "George Crabbe"
+        },
+        {
+          "rank": 4,
+          "score": 43.28082478317364,
+          "title": "Symphonic poem"
+        },
+        {
+          "rank": 5,
+          "score": 43.14280373906235,
+          "title": "The Man from Snowy River (poem)"
+        },
+        {
+          "rank": 6,
+          "score": 42.926697084427104,
+          "title": "Samuel Johnson"
+        },
+        {
+          "rank": 7,
+          "score": 42.359680705771744,
+          "title": "Ancient Greek religion"
+        },
+        {
+          "rank": 8,
+          "score": 40.66390992713623,
+          "title": "Hero and Leander (poem)"
+        },
+        {
+          "rank": 9,
+          "score": 39.56458771394796,
+          "title": "Stephen Crane"
+        },
+        {
+          "rank": 10,
+          "score": 39.42282373504803,
+          "title": "Bliss Carman"
+        }
+      ]
+    },
+    {
+      "category": "CAMBODIAN HISTORY & CULTURE",
+      "clue": "Not to be confused with karma, krama is a popular accessory sold in cambodia; the word means \"scarf\" in this national language of Cambodia",
+      "aliases": [
+        "Khmer language"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 43.883085537781696,
+          "title": "Khmer language"
+        },
+        {
+          "rank": 2,
+          "score": 51.48986529363443,
+          "title": "Meaning of life"
+        },
+        {
+          "rank": 3,
+          "score": 49.445552542022135,
+          "title": "Politics of Cambodia"
+        },
+        {
+          "rank": 4,
+          "score": 48.02147352067347,
+          "title": "History of Cambodia"
+        },
+        {
+          "rank": 5,
+          "score": 47.24233879643479,
+          "title": "Tarkan (singer)"
+        },
+        {
+          "rank": 6,
+          "score": 40.17673802922023,
+          "title": "Thai language"
+        },
+        {
+          "rank": 7,
+          "score": 39.75274383097022,
+          "title": "Spanish language"
+        },
+        {
+          "rank": 8,
+          "score": 39.703083685127865,
+          "title": "Vietnamese language"
+        },
+        {
+          "rank": 9,
+          "score": 39.10155519750361,
+          "title": "Reincarnation"
+        },
+        {
+          "rank": 10,
+          "score": 38.94208423521954,
+          "title": "National Firearms Act"
+        }
+      ]
+    },
+    {
+      "category": "CAMBODIAN HISTORY & CULTURE",
+      "clue": "Phnom Penh's notorious gridlock is circumvented by the nimble tuk-tuk, a motorized taxi that's also known as an auto this, a similar Asian conveyance.",
+      "aliases": [
+        "Rickshaw"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 106.57169857964992,
+          "title": "Cycle rickshaw"
+        },
+        {
+          "rank": 2,
+          "score": 207.4946443891607,
+          "title": "Olympic Stadium (Phnom Penh)"
+        },
+        {
+          "rank": 3,
+          "score": 118.81385894299223,
+          "title": "Khmer Rouge"
+        },
+        {
+          "rank": 4,
+          "score": 116.51093283682242,
+          "title": "Mekong"
+        },
+        {
+          "rank": 5,
+          "score": 108.41099753703712,
+          "title": "Transport in Cambodia"
+        },
+        {
+          "rank": 6,
+          "score": 105.56440310467694,
+          "title": "Khmer language"
+        },
+        {
+          "rank": 7,
+          "score": 105.37370586517429,
+          "title": "History of Cambodia"
+        },
+        {
+          "rank": 8,
+          "score": 93.69969615879131,
+          "title": "Telecommunications in Cambodia"
+        },
+        {
+          "rank": 9,
+          "score": 92.54938200342878,
+          "title": "Alan Lightman"
+        },
+        {
+          "rank": 10,
+          "score": 90.33110589806546,
+          "title": "Economy of Cambodia"
+        }
+      ]
+    },
+    {
+      "category": "'80s NO.1 HITMAKERS",
+      "clue": "1980: \"Rock With You\"",
+      "aliases": [
+        "Michael Jackson"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 86.67353271498722,
+          "title": "Rock, Rock, Rock (film)"
+        },
+        {
+          "rank": 2,
+          "score": 82.6128017017103,
+          "title": "Rock music"
+        },
+        {
+          "rank": 3,
+          "score": 81.59732452667853,
+          "title": "Sedimentary rock"
+        },
+        {
+          "rank": 4,
+          "score": 81.57555623294552,
+          "title": "Punk rock"
+        },
+        {
+          "rank": 5,
+          "score": 81.44712191397817,
+          "title": "Southern rock"
+        },
+        {
+          "rank": 6,
+          "score": 80.84567671736144,
+          "title": "Fraggle Rock"
+        },
+        {
+          "rank": 7,
+          "score": 80.5216012392562,
+          "title": "Christian rock"
+        },
+        {
+          "rank": 8,
+          "score": 80.2910026801888,
+          "title": "Garage rock"
+        },
+        {
+          "rank": 9,
+          "score": 79.68919473004185,
+          "title": "Rock and roll"
+        },
+        {
+          "rank": 10,
+          "score": 79.39616188346946,
+          "title": "College rock"
+        }
+      ]
+    },
+    {
+      "category": "NOTES FROM THE CAMPAIGN TRAIL",
+      "clue": "The Pulitzer-winning \"The Making of the President 1960\" covered this man's successful presidential campaign",
+      "aliases": [
+        "JFK",
+        "John F. Kennedy"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 49.215412275954534,
+          "title": "Richard Nixon"
+        },
+        {
+          "rank": 2,
+          "score": 97.88965197737106,
+          "title": "George McGovern"
+        },
+        {
+          "rank": 3,
+          "score": 57.49864636852635,
+          "title": "Ralph Nader presidential campaign, 2000"
+        },
+        {
+          "rank": 4,
+          "score": 53.306274996422616,
+          "title": "1960s"
+        },
+        {
+          "rank": 5,
+          "score": 53.270705553866634,
+          "title": "Elmer Bernstein"
+        },
+        {
+          "rank": 6,
+          "score": 52.01661875628603,
+          "title": "Vice President of the United States"
+        },
+        {
+          "rank": 7,
+          "score": 51.28324795024493,
+          "title": "United States presidential line of succession"
+        },
+        {
+          "rank": 8,
+          "score": 51.002322032213684,
+          "title": "Jack Kemp"
+        },
+        {
+          "rank": 9,
+          "score": 50.942973416075205,
+          "title": "Hunter S. Thompson"
+        },
+        {
+          "rank": 10,
+          "score": 47.549917088534535,
+          "title": "Michael Dukakis"
+        }
+      ]
+    },
+    {
+      "category": "SERVICE ORGANIZATIONS",
+      "clue": "In 1843 Isaac Dittenhoefer became the first pres. of this Jewish club whose name means \"children of the covenant\"",
+      "aliases": [
+        "B'nai B'rith"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 100.71655701865801,
+          "title": "B'nai B'rith"
+        },
+        {
+          "rank": 2,
+          "score": 86.82267948489094,
+          "title": "Mormonism"
+        },
+        {
+          "rank": 3,
+          "score": 53.904690256020984,
+          "title": "Isaac Newton"
+        },
+        {
+          "rank": 4,
+          "score": 53.71314448137933,
+          "title": "Jewish eschatology"
+        },
+        {
+          "rank": 5,
+          "score": 53.247849714142426,
+          "title": "Christianity and Judaism"
+        },
+        {
+          "rank": 6,
+          "score": 52.63234872994919,
+          "title": "Lilith"
+        },
+        {
+          "rank": 7,
+          "score": 52.0966325848333,
+          "title": "Isaac Asimov"
+        },
+        {
+          "rank": 8,
+          "score": 50.6739565431255,
+          "title": "Jacob"
+        },
+        {
+          "rank": 9,
+          "score": 49.84729468117275,
+          "title": "Elijah"
+        },
+        {
+          "rank": 10,
+          "score": 49.73949320643914,
+          "title": "Jewish views on marriage"
+        }
+      ]
+    },
+    {
+      "category": "THE RESIDENTS",
+      "clue": "Don Knotts took over from Norman Fell as the resident landlord on this sitcom",
+      "aliases": [
+        "Three's Company"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 80.18458312348382,
+          "title": "Three's Company"
+        },
+        {
+          "rank": 2,
+          "score": 80.98463386746947,
+          "title": "John Ritter"
+        },
+        {
+          "rank": 3,
+          "score": 72.36039742615633,
+          "title": "Tim Conway"
+        },
+        {
+          "rank": 4,
+          "score": 64.08059258672345,
+          "title": "Matlock (TV series)"
+        },
+        {
+          "rank": 5,
+          "score": 56.77792736413551,
+          "title": "Bill Bixby"
+        },
+        {
+          "rank": 6,
+          "score": 56.34238321232201,
+          "title": "That '70s Show"
+        },
+        {
+          "rank": 7,
+          "score": 48.758670816510765,
+          "title": "Barbara Eden"
+        },
+        {
+          "rank": 8,
+          "score": 45.65652016163261,
+          "title": "George Costanza"
+        },
+        {
+          "rank": 9,
+          "score": 45.59024547985935,
+          "title": "Ron Howard"
+        },
+        {
+          "rank": 10,
+          "score": 45.023220723136845,
+          "title": "Doug"
+        }
+      ]
+    },
+    {
+      "category": "OLD YEAR'S RESOLUTIONS",
+      "clue": "U.N. Res. 242 supports \"secure and recognized boundaries\" for Israel & neighbors following this June 1967 war",
+      "aliases": [
+        "The Six Day War"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 118.120421235646,
+          "title": "History of Israel"
+        },
+        {
+          "rank": 2,
+          "score": 118.02277149205341,
+          "title": "Israeli–Palestinian conflict"
+        },
+        {
+          "rank": 3,
+          "score": 83.64689017147619,
+          "title": "Golda Meir"
+        },
+        {
+          "rank": 4,
+          "score": 76.65735526103649,
+          "title": "Foreign relations of Israel"
+        },
+        {
+          "rank": 5,
+          "score": 75.42192921245987,
+          "title": "Golan Heights"
+        },
+        {
+          "rank": 6,
+          "score": 68.82043637541824,
+          "title": "Refugee"
+        },
+        {
+          "rank": 7,
+          "score": 66.8939484901689,
+          "title": "Yom Kippur War"
+        },
+        {
+          "rank": 8,
+          "score": 66.2507852392273,
+          "title": "Gulf War"
+        },
+        {
+          "rank": 9,
+          "score": 63.2719969539949,
+          "title": "1982 Lebanon War"
+        },
+        {
+          "rank": 10,
+          "score": 62.75439098994765,
+          "title": "1948 Arab–Israeli War"
+        }
+      ]
+    },
+    {
+      "category": "UCLA CELEBRITY ALUMNI",
+      "clue": "This blonde beauty who reprised her role as Amanda on the new \"Melrose Place\" was a psychology major",
+      "aliases": [
+        "Heather Locklear"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 167.26094373384018,
+          "title": "Heather Locklear"
+        },
+        {
+          "rank": 2,
+          "score": 138.73915295953282,
+          "title": "Grant Show"
+        },
+        {
+          "rank": 3,
+          "score": 124.6955417964182,
+          "title": "Courtney Thorne-Smith"
+        },
+        {
+          "rank": 4,
+          "score": 124.05536093126406,
+          "title": "Lisa Rinna"
+        },
+        {
+          "rank": 5,
+          "score": 121.90119226342313,
+          "title": "Constantine III of Scotland"
+        },
+        {
+          "rank": 6,
+          "score": 114.61213653498837,
+          "title": "Thomas Calabro"
+        },
+        {
+          "rank": 7,
+          "score": 112.51653078406383,
+          "title": "Kristin Davis"
+        },
+        {
+          "rank": 8,
+          "score": 110.11553968554482,
+          "title": "Denise Richards"
+        },
+        {
+          "rank": 9,
+          "score": 91.16477556294963,
+          "title": "Gina Gershon"
+        },
+        {
+          "rank": 10,
+          "score": 86.3330443936872,
+          "title": "And Maggie Makes Three"
+        }
+      ]
+    },
+    {
+      "category": "GREEK FOOD & DRINK",
+      "clue": "The name of this dish of marinated lamb, skewered & grilled, comes from the Greek for \"skewer\" & also starts with \"s\"",
+      "aliases": [
+        "Souvlaki"
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 72.98783189005466,
+          "title": "Souvlaki"
+        },
+        {
+          "rank": 2,
+          "score": 68.36689126774804,
+          "title": "Awadhi cuisine"
+        },
+        {
+          "rank": 3,
+          "score": 50.22622315519624,
+          "title": "Sausage"
+        },
+        {
+          "rank": 4,
+          "score": 49.802170210105864,
+          "title": "Bengali cuisine"
+        },
+        {
+          "rank": 5,
+          "score": 49.42674121025213,
+          "title": "English cuisine"
+        },
+        {
+          "rank": 6,
+          "score": 46.12796835424634,
+          "title": "Korean cuisine"
+        },
+        {
+          "rank": 7,
+          "score": 44.73859697347572,
+          "title": "Culture of Iraq"
+        },
+        {
+          "rank": 8,
+          "score": 43.96646116894686,
+          "title": "Homs"
+        },
+        {
+          "rank": 9,
+          "score": 43.047754317302136,
+          "title": "Zorba the Greek (film)"
+        },
+        {
+          "rank": 10,
+          "score": 42.489098997170885,
+          "title": "Brazilian cuisine"
+        }
+      ]
+    },
+    {
+      "category": "NAME THE PARENT COMPANY",
+      "clue": "Post-it notes",
+      "aliases": [
+        "3M"
+      ],
+      "rank": 0,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 23.357191979381717,
+          "title": "The Washington Post"
+        },
+        {
+          "rank": 2,
+          "score": 21.849358405072962,
+          "title": "Post-transitional metal"
+        },
+        {
+          "rank": 3,
+          "score": 21.826942862309107,
+          "title": "Post-Keynesian economics"
+        },
+        {
+          "rank": 4,
+          "score": 21.80395528334569,
+          "title": "Marjorie Merriweather Post"
+        },
+        {
+          "rank": 5,
+          "score": 21.722604033859028,
+          "title": "New York Post"
+        },
+        {
+          "rank": 6,
+          "score": 21.700856756777302,
+          "title": "Boston Post Road"
+        },
+        {
+          "rank": 7,
+          "score": 21.258766485815226,
+          "title": "Post herniorraphy pain syndrome"
+        },
+        {
+          "rank": 8,
+          "score": 20.72028409595588,
+          "title": "Apocalyptic and post-apocalyptic fiction"
+        },
+        {
+          "rank": 9,
+          "score": 19.707480899497167,
+          "title": "C. W. Post"
+        },
+        {
+          "rank": 10,
+          "score": 19.535205710870528,
+          "title": "Post-rock"
+        }
+      ]
+    },
+    {
+      "category": "GOLDEN GLOBE WINNERS",
+      "clue": "In 2010: As Sherlock Holmes on film",
+      "aliases": [
+        "Robert Downey, Jr."
+      ],
+      "rank": 1,
+      "top_hits": [
+        {
+          "rank": 1,
+          "score": 86.90788074337539,
+          "title": "Robert Downey, Jr."
+        },
+        {
+          "rank": 2,
+          "score": 151.53565108956332,
+          "title": "Sherlock Holmes Was Wrong"
+        },
+        {
+          "rank": 3,
+          "score": 95.90440026336142,
+          "title": "Irene Adler"
+        },
+        {
+          "rank": 4,
+          "score": 90.65507802323478,
+          "title": "Jeremy Brett"
+        },
+        {
+          "rank": 5,
+          "score": 89.96339278965864,
+          "title": "Basil Rathbone"
+        },
+        {
+          "rank": 6,
+          "score": 87.44203482812432,
+          "title": "The Five Orange Pips"
+        },
+        {
+          "rank": 7,
+          "score": 86.44061468581342,
+          "title": "Edward Hardwicke"
+        },
+        {
+          "rank": 8,
+          "score": 85.56655946709103,
+          "title": "The Adventure of the Musgrave Ritual"
+        },
+        {
+          "rank": 9,
+          "score": 85.29747697643775,
+          "title": "Feluda"
+        },
+        {
+          "rank": 10,
+          "score": 84.39800047820398,
+          "title": "Cluedo"
+        }
+      ]
+    }
+  ]
+}

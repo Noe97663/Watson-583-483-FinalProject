@@ -105,9 +105,16 @@ def evaluate(
     *,
     top_k: int = 10,
     mode: str = "baseline",
+    progress: bool = False,
 ) -> List[QResult]:
+    """Run retrieval + scoring over ``questions``.
+
+    With ``progress=True``, prints one line per question summarising
+    the picked top-1 and whether it matched the gold. Off by default
+    so unit tests and library callers stay quiet.
+    """
     out: List[QResult] = []
-    for q in questions:
+    for i, q in enumerate(questions, 1):
         hits = search(ix, q.clue, q.category, top_k=top_k, mode=mode)
         rank = 0
         for h in hits:
@@ -115,6 +122,15 @@ def evaluate(
                 rank = h.rank
                 break
         out.append(QResult(question=q, hits=hits, rank=rank))
+        if progress:
+            top1 = hits[0].title if hits else "<no hits>"
+            mark = "OK " if rank == 1 else (f"r={rank}" if rank else "miss")
+            gold = q.gold[:30]
+            print(
+                f"  [{i:>3}/{len(questions)}] {mode:<8} {mark:>5}  "
+                f"gold={gold:<30}  top1={top1[:40]}",
+                flush=True,
+            )
     return out
 
 
@@ -141,22 +157,42 @@ def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--index-dir", default="index")
     p.add_argument("--questions", default="data/questions.txt")
-    p.add_argument("--mode", choices=["baseline", "improved"], default="baseline")
+    p.add_argument("--mode", choices=["baseline", "improved", "llm"], default="baseline")
     p.add_argument("--top-k", type=int, default=10)
     p.add_argument("--out", default=None,
                    help="optional JSON file to dump per-question results")
     p.add_argument("--quiet", action="store_true")
     args = p.parse_args()
 
+    print(f"[step 1] reading questions from {args.questions} ...", flush=True)
     qs = read_questions(args.questions)
+    print(f"         loaded {len(qs)} questions.", flush=True)
+
+    print(f"[step 2] opening Whoosh index at {args.index_dir} ...", flush=True)
     ix = open_index(args.index_dir)
-    results = evaluate(ix, qs, top_k=args.top_k, mode=args.mode)
+    print(f"         index has {ix.doc_count()} documents.", flush=True)
+
+    print(f"[step 3] running retrieval (mode={args.mode}, top-k={args.top_k}) ...",
+          flush=True)
+    if args.mode == "llm" and not args.quiet:
+        # Lazy import: don't pull in anthropic for non-LLM modes.
+        if __package__ in (None, ""):
+            from llm_rerank import set_default_verbose  # type: ignore
+        else:
+            from .llm_rerank import set_default_verbose
+        set_default_verbose(True)
+    results = evaluate(ix, qs, top_k=args.top_k, mode=args.mode, progress=not args.quiet)
     s = summary(results)
 
     if not args.quiet:
+        print()
+        print("Per-question table:")
         for line in _format_table(results):
             print(line)
     print()
+    print("=" * 60)
+    print("Summary")
+    print("=" * 60)
     print(f"mode      : {args.mode}")
     print(f"questions : {s['n']}")
     print(f"P@1       : {s['p_at_1']:.3f}  ({sum(1 for r in results if r.correct)}/{s['n']})")
@@ -184,7 +220,7 @@ def main() -> None:
         }
         with open(args.out, "w", encoding="utf-8") as fh:
             json.dump(payload, fh, indent=2, ensure_ascii=False)
-        print(f"wrote {args.out}")
+        print(f"[step 4] wrote per-question JSON to {args.out}")
 
 
 if __name__ == "__main__":
