@@ -115,6 +115,17 @@ mode \texttt{llm} (see Question~5). Tests use Python's built-in
 
 \subsection{Build the Index (one-time, \textasciitilde30--60 min)}
 
+The wiki subset ships as \texttt{data/wiki-subset-20140602.tar.gz}.
+Extract it in place so the 80
+\texttt{enwiki-20140602-pages-articles.xml-*.txt} files sit alongside
+\texttt{data/questions.txt}:
+
+\begin{lstlisting}[language=bash]
+tar -xzf data/wiki-subset-20140602.tar.gz -C data
+\end{lstlisting}
+
+Then build the index:
+
 \begin{lstlisting}[language=bash]
 python src/build_index.py --data-dir data --index-dir index
 \end{lstlisting}

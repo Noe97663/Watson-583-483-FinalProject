@@ -46,6 +46,16 @@ built-in `unittest`.
 
 ### 2. Build the index (one-time, ~30–60 min)
 
+The wiki subset ships as `data/wiki-subset-20140602.tar.gz`. Extract it
+in place so the 80 `enwiki-20140602-pages-articles.xml-*.txt` files
+sit alongside `data/questions.txt`:
+
+```bash
+tar -xzf data/wiki-subset-20140602.tar.gz -C data
+```
+
+Then build the index:
+
 ```bash
 python src/build_index.py --data-dir data --index-dir index
 ```
